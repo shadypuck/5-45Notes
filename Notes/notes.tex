@@ -1,0 +1,35 @@
+\documentclass{report}
+
+\input{../preamble.tex}
+
+\renewcommand{\contentsname}{Topics}
+\renewcommand{\chaptername}{Topic}
+
+\title{5.45 (Heterocyclic Chemistry) Notes}
+\author{Steven Labalme}
+
+\begin{document}
+
+
+
+
+\renewcommand{\thepage}{Cover}
+\maketitle
+
+
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+
+
+\pagenumbering{arabic}
+\pagestyle{main}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
+\subfile{Topic1/topic1.tex}
+
+
+
+
+\end{document}
