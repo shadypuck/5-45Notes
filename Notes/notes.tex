@@ -20,6 +20,7 @@
 
 \pagenumbering{roman}
 \tableofcontents
+\listoffigures
 \newpage
 
 
@@ -28,6 +29,10 @@
 \pagestyle{main}
 \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
 \subfile{Topic1/topic1.tex}
+
+\newpage
+\renewcommand{\leftmark}{References}
+\printbibliography[heading=bibintoc]
 
 
 
