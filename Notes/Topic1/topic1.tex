@@ -507,5 +507,368 @@
 
 
 
+\section{Pyridine Cross-Coupling, Synthesis, and Derivatization}
+\begin{itemize}
+    \item \marginnote{2/6:}Announcements.
+    \begin{itemize}
+        \item I am assigned compound No. 10 for the final project.
+        \item PSet 1 posted.
+        \begin{itemize}
+            \item If you get stuck on a problem, don't do it!
+            \item Don't spend more than 3 hours on the PSet.
+            \item Spending 27 hours on this PSet demonstrates "a \emph{decided} lack of judgment."
+        \end{itemize}
+    \end{itemize}
+    \item Lecture begins: Back to cross-coupling.
+    \pagebreak
+    \item A major disadvantage of cross-coupling in synthesis: The amount of catalyst left behind.
+    \begin{itemize}
+        \item Examples.
+        \begin{itemize}
+            \item Pd, Rh, Ir: You can have \SI{10}{\partspermillion} residual in your \textbf{API}.
+            \item \ce{Ni}: \SI{20}{\partspermillion}.
+            \item \ce{Cu}: \SI{300}{\partspermillion}.
+        \end{itemize}
+        \item API: Active Pharmaceutical Ingredient.
+        \item There is a cottage industry of removing trace metals after reaction. Common methods include\dots
+        \begin{itemize}
+            \item Adsorption onto surfaces;
+            \item Oxidation with swimming pool bleach;
+            \item Fancier solid-supported resins with ligands.
+        \end{itemize}
+    \end{itemize}
+    \item We'll talk mostly about palladium-catalyzed cross-coupling.
+    \begin{itemize}
+        \item \ce{Pd} is used in 95\% of applications.
+        \begin{itemize}
+            \item \ce{Ni} is the other 5\%, since it has decided process benefits (cheaper, lower toxicity).
+        \end{itemize}
+        \item We add to solution a \textbf{precatalyst} (usually either \ce{Pd^0} or \ce{Pd^{II}}).
+        \begin{itemize}
+            \item If \ce{Pd^{II}}, you need a reduction.
+            \item Contrary to some textbooks, phosphines \emph{cannot} reduce \ce{Pd^{II}}; phosphines \emph{plus water} can.
+        \end{itemize}
+        \item After reduction (if needed), the precatalyst needs to lose a ligand or two.
+        \item $d^8$ metals follow a 16-electron rule, not an 18-electron one.
+        \item After oxidative addition to the \emph{cis}-species, you get equilibration to the \emph{trans}-species.
+        \item Rate of \emph{oxidative addition} (not the overall catalytic cycle):
+        \begin{equation*}
+            \ce{I} > \ce{CF3SO3} \approx \ce{Br} \gg \ce{Cl} > \ce{OTs} > \ce{OMs}
+        \end{equation*}
+        \begin{itemize}
+            \item Cost runs in the opposite direction!
+            \item If you use a weak catalyst like palladium tetrakis, oxidative addition is rate-limiting. But with active, modern catalysts, ??oxidative addition to?? iodides can be rate limiting!
+            \begin{itemize}
+                \item Is oxidative addition to iodides slower with modern catalysts, or is it transmetallation with iodides that makes the overall process slower??
+            \end{itemize}
+        \end{itemize}
+        \item Greg Fu (first at MIT, then at Caltech) really pioneered oxidative addition to $sp^3$-halides.
+        \begin{itemize}
+            \item These substrates did not work previously due to competitive $\beta$-hydride elimination.
+            \item Reference: \textcite{bib:FuAlkyl}.
+        \end{itemize}
+    \end{itemize}
+    \item Transmetallation.
+    \begin{itemize}
+        \item Transfer a group from boron, zinc, tin, etc.
+        \item Mechanism: $\sigma$-bond metathesis.
+        \begin{itemize}
+            \item Note that "metathesis" has nothing to do with olefins; it just means "interchange."
+        \end{itemize}
+        \item Having an \ce{L1Pd} species means that you have lots of space for $\sigma$-bond metathesis to occur!
+        \begin{itemize}
+            \item Bulky iodides take up space and can slow this down (with modern catalysts).
+            \item Steve has gathered experimental evidence for this effect! See Footnote 18 in \textcite{bib:BuchwaldTransmetal}.
+        \end{itemize}
+    \end{itemize}
+    \item Fu solves heteroaryl boronic acids.
+    \begin{equation*}
+        \ce{Het1B(OH)2 + Het2X ->[Pd2(dba)3 (1.0 mol\%), PCy3 (2.4 mol\%), K3PO4 (1.7 {eq.})][1,4-dioxane, H2O, \SI{100}{\celsius}] Het1-Het2}
+    \end{equation*}
+    \begin{itemize}
+        \item Very small differences have big impacts on reactivities.
+        \item Look at what has been done and don't make assumptions, otherwise you can reinvent problems that have already been solved!
+        \item They used \ce{Pd2(dba)2} (dibenzylideneacetone).
+        \begin{itemize}
+            \item Good, cheap ligand.
+            \item Because it's good, it doesn't just say, "goodbye" in the flask; it hangs around and can slow reactivity.
+        \end{itemize}
+        \item \ce{KF} isn't extremely basic, but boron is very fluorophilic; the ate complex formed facilitates transmetallation.
+        \item This is really good heterocycle-heterocycle chemistry!
+        \item People have a love-hate relationship with boronic acids.
+        \begin{itemize}
+            \item Often work but unstable, difficult to quantitate via NMR, etc.
+            \item This is why people like to use boronate esters or Molander salts (trifluoroborates), which are both \emph{in situ} slow generators of boronic acids.
+            \item Proto-deboronation (replacement of boron with a hydrogen) is a problem, though.
+        \end{itemize}
+        \item Reference: \textcite{bib:FuHeteroaryls}.
+    \end{itemize}
+    \item Clever tricks with boron.
+    \begin{figure}[h!]
+        \centering
+        \footnotesize
+        \schemestart
+            \chemname{
+                \chemfig{*6(-=-(-B?-[:15,0.6]O-[:50,0.9](=[:-12]O)-[:110]-[:-170]MeN?[,,{latex-}]-[:-30]-[:-70,,,,ovbnd](=[:-12]O)-[:-130,0.9]O?)=N-=)}
+            }{1.5 eq.}
+            \arrow{0}[,0.1]\+
+            \chemfig{ArCl}
+            \arrow{->[\tikz{\node[align=center]{\ce{Pd2(dba)3} (1.5 mol\%)\\XPhos (6 mol\%)\\\ce{Cu(OAc)} (50 mol\%)}}][\tikz{\node[align=center]{\ce{K2CO3}, DMF/IPA\\\SI{100}{\celsius}, 4h}}]}[,2.5]
+            \chemfig{*6(-=-(-Ar)=N-=)}
+        \schemestop
+        \caption{MIDA boronates for air-stable 2-pyridyl couplings.}
+        \label{fig:MIDA}
+    \end{figure}
+    \begin{itemize}
+        \item Marty Burke's (UIUC) slow-release strategy generates boronic acid \emph{in situ} as needed.
+        \begin{itemize}
+            \item Transfer of pyridyl group to copper and then transmetallation.
+        \end{itemize}
+        \item 2-pyridylboronic acid is extremely unstable; you can buy it, but what you buy won't be it in Steve's opinion.
+        \begin{itemize}
+            \item Steve believes you should \emph{always} assay your starting materials.
+        \end{itemize}
+        \item References.
+        \begin{itemize}
+            \item \textcite{bib:Burke1} --- original report of MIDA boronates.
+            \item \textcite{bib:Burke2} --- improved method with copper aminodiol additives.
+        \end{itemize}
+    \end{itemize}
+    \item Negishi coupling of 2-pyridylzinc reagents is ideal!
+    \begin{figure}[h!]
+        \centering
+        \footnotesize
+        \setchemfig{autoreset cntcycle=false,fixed length=false}
+        \schemestart
+            \chemfig{*6(-N=(-ZnBr)-=-=-)}
+            \arrow{0}[,0.1]\+
+            \chemfig{ArX}
+            \arrow{->[\ce{Pd(PPh3)4 (1 mol\%)}][THF, \SI{25}{\celsius}, \SIrange{24}{72}{\hour}]}[,2.4]
+            \chemfig{*6((-[,,,,opacity=0])-N=(-Ar)-=-=)}
+        \schemestop
+        \chemmove{
+            \draw [-,ovbnd] (cyclecenter2) ++(-0.2,0) -- ++(-0.45,0) node[left,black]{R};
+            \draw [-,ovbnd] (cyclecenter3) ++(-0.2,0) -- ++(-0.45,0) node[left,black]{R};
+        }
+        \caption{Negishi-type 2-pyridyl couplings.}
+        \label{fig:NegishiPyridyl}
+    \end{figure}
+    \begin{itemize}
+        \item No protozincation unless you add water.
+        \item Even with the simplest of catalysts, this works.
+        \item But much fewer aryl zincs are commercially available.
+        \item References: Rieke zinc, \textcite{bib:BuchwaldNegishi} --- RuPhos optimizes Negishi.
+    \end{itemize}
+    \item Steve's mantra in consulting: The best metal is none.
+    \begin{itemize}
+        \item If you can do it without a metal, that's ideal.
+        \item If you're gonna use a metal, it had better confer a \emph{major} advantage.
+        \item Metal catalysis might work on a discovery scale, but uncatalyzed heat will be preferred on a preparative scale.
+    \end{itemize}
+    \item Dan Weix (Rochester $\to$ Wisconsin-Madison) has pioneered the area of combination catalysts.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\linewidth]{NiPdCat.png}
+        \caption{Tandem nickel-palladium catalyzed aryl halide cross-coupling.}
+        \label{fig:NiPdCat}
+    \end{figure}
+    \begin{itemize}
+        \item Combination catalysis can achieve direct cross-coupling of two aryl halides.
+        \begin{itemize}
+            \item This confers major advantages from a process chemistry perspective, as opposed to having to metallate one of them first.
+        \end{itemize}
+        \item Weix's tandem catalytic system uses nickel/palladium dual catalysis.
+        \begin{itemize}
+            \item Nickel's ligand is dtbbpy.
+            \begin{itemize}
+                \item \ce{{}^{\emph{t}}Bu}tylation of bpy gives better solubility!
+            \end{itemize}
+            \item Palladium's ligand is dppp.
+            \begin{itemize}
+                \item Because dppp has three carbons, the chelate effect is weakened to the point that one phosphine can pop off (as I suggested to Paul Chirik!).
+            \end{itemize}
+            \item Mixed-ligand square-planar species??
+        \end{itemize}
+        \item The advantage of this dual catalysis is that different metals do oxidative addition at different rates, so you can get transmetallation as if you'd used a different metal.
+        \begin{itemize}
+            \item \ce{Ni} prefers $\ce{C-Br}>\ce{C-Cl}>\ce{C-OTf}$.
+            \item \ce{Pd} prefers $\ce{C-OTf}>\ce{C-Br}>\ce{C-Cl}$.
+        \end{itemize}
+        \item Although limited to a very narrow scope of pyridine derivatives, this is being used very widely!
+        \item References.
+        \begin{itemize}
+            \item \textcite{bib:Weix1} --- original report.
+            \item \textcite{bib:Weix2} --- update for heterocycles.
+            \item \textcite{bib:Weix3} --- review of cross-elecrophile couplings.
+        \end{itemize}
+    \end{itemize}
+    \item Pyridine synthesis.
+    \begin{itemize}
+        \item \textbf{Hantzsch pyridine synthesis} is particularly important.
+        \item \textbf{Cyclotrimerization} is most aesthetically pleasing, but not necessarily the most useful.
+        \item \textbf{Petrenko-Kritschenko} is a variation on a theme.
+    \end{itemize}
+    \item Dicarbonyl approaches.
+    \begin{itemize}
+        \item Scope-limiting factor is often how you get to the dicarbonyl.
+        \item Oxidation can be done with nitric acid or DDQ (particularly on a small scale).
+    \end{itemize}
+    \item Asymmetric pyridines.
+    \begin{itemize}
+        \item Do Hantzsch chemistry in two-steps.
+        \item First, make your preferred $\alpha,\beta$-unsaturated ketone.
+        \item Then combine it with a \textbf{vinyligous urethane} (not an enamine) and oxidize.
+        \item Advantage: The presence of pyridinium eliminates the need to oxidize at the end.
+    \end{itemize}
+    \item Kr\"{o}hnke.
+    \begin{itemize}
+        \item Make the $\alpha$-halo species \emph{in situ}, which reacts with pyridine.
+        \item Then enolization, addition, and condensation.
+    \end{itemize}
+    \item $[2+2+2]$ pyridine synthesis.
+    \begin{itemize}
+        \item Has been used in some contexts in very large scale, though not for pyridine synthesis.
+        \item Ramsay (aged 24) discovered this.
+        \item Chemistry in the 1800s was chemistry of "gentlemen," who did things in their home laboratories.
+        \item Original report: Acetylene (explosive) plus \ce{HCN} (toxic) in a hot tube gives pyridine.
+        \item B\"{o}nnemann picks this up.
+        \begin{itemize}
+            \item Two acetylenes combine with a cobalt catalyst.
+            \item Then Diels-Alder onto the nitrile.
+        \end{itemize}
+        \item Cyclotrimerizations are cyclotetramerizations have the regioisomer problem, though.
+        \item Wittig started the use of these to make aromatics.
+        \item If you have a regioisomer problem, cheat by either doing intramolecular stuff or a large excess of one reagent (e.g., as Vollhardt did).
+    \end{itemize}
+    \item Zincke chemistry.
+    \begin{itemize}
+        \item A chemist's hope in life is that you develop a reaction, somebody uses it to do something useful, and you get some of the credit or benefit of it. Sometimes this happens during your lifetime, and sometimes after.
+        \item Zincke's chemistry found utility 90 years after he died in an ingenious synthesis of strychnine \parencite{bib:ZinckeStrychnine}.
+    \end{itemize}
+    \item Modern Zincke chemistry: \emph{meta}-halogenation of pyridines via reversible ring-opening.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\linewidth]{ZinckeMeta.png}
+        \caption{\emph{meta}-halogenation of pyridines via Zinke chemistry.}
+        \label{fig:ZinckeMeta}
+    \end{figure}
+    \begin{itemize}
+        \item After Vanderwal's efforts, Zincke chemistry once again lay fallow for a while. But then Andy McNally (Colorado State) used it for \emph{meta}-CH activation.
+        \item \ce{Hal+} is some kind of positive halogenating agent.
+        \item Mechanism.
+        \begin{itemize}
+            \item Retrocyclization ring-opens pyridine following triflation.
+            \item This temporarily makes pyridines reactive with electrophiles!
+        \end{itemize}
+        \item Regiochemical ambiguity with NCS; very selective with NBS or NIS.
+        \begin{itemize}
+            \item They had no clue why, so did DFT and Hammond-type arguments about early/late transition states.
+        \end{itemize}
+        \item Very elegant paper; eventually came up with good procedures for two types of compounds.
+        \item Reference: \textcite{bib:ZinckeMeta}.
+        \item Takeaway: Heterocycles are not rocks; balance thinking of them as benzene analogs with thinking of them as normal molecules that can open, close, move around, come from different things, etc.
+    \end{itemize}
+    \item \emph{meta}-halogenation of pyridines via reversible dearomatization.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.99\linewidth]{DearoMeta.png}
+        \caption{\emph{meta}-halogenation of pyridines via temporary dearomatization.}
+        \label{fig:DearoMeta}
+    \end{figure}
+    \begin{itemize}
+        \item Studer (M\"{u}nster, top German school for OChem) develops this chemistry in the same time frame as McNally.
+        \item Again, different products for chlorination vs. bromination.
+        \item Take yields like 98\% with a grain of salt, but it indicates that you're probably high-yielding.
+        \item Reference: \textcite{bib:DearoMeta}.
+    \end{itemize}
+    \item Might do some problems on Monday!
+    \item Steve covers the synthesis of Nexavar.
+    \item Synthesis of a Chk1 Kinase inhibitor.
+    \begin{itemize}
+        \item Starting material is a bromo/chloro/nitro-substituted 7-azaindole.
+        \begin{itemize}
+            \item Steve wasn't quite sure how they got here, but his former postdoc is now the head of process chem at Genentech (lmao), so he was able to point Steve toward the route.
+        \end{itemize}
+        \item Strong acids protonate the pyridine, then add to the 3-position!
+        \begin{itemize}
+            \item We'll talk more about this later in the course.
+        \end{itemize}
+        \item Piperidine's amine reacts much faster than the amide.
+        \item Amino-indoles are very prone to oxidation, but acylating it immediately gives a clean compound.
+        \item Lots of process chem involves what you can do in the same flask; this is \textbf{telescoping}.
+        \item But you don't want to do this so much that you have too many impurities to easily filter out.
+        \item At scale, you can do some extractions, but you mostly want to do crystallizations.
+        \item Different crystalline forms of the same compound can have different patents, different patent lifetimes, different pharmacokinetics, etc.
+    \end{itemize}
+    \pagebreak
+    \item Kinases are responsible for many different physiological functions
+    \begin{itemize}
+        \item 700 in the body.
+        \item Steve thinks it's a miracle we can design molecules to hit 1 out of the 700!
+    \end{itemize}
+    \item Another kinase synthesis.
+    \begin{itemize}
+        \item Synthesis is done from commercial pyrazole using Claisen chemistry and then amide formation.
+    \end{itemize}
+    \item Pharmaceuticals are also widely applied in agrochemistry.
+    \begin{itemize}
+        \item If you work for Cortiva in Minneapolis, it's gonna be quite similar to Lilly in Indianapolis.
+        \begin{itemize}
+            \item But when you do scale-up for agrochemicals, cost matters much more!
+            \item Though with the environmental push to use smaller quantities agrochemicals, cost is mattering less.
+        \end{itemize}
+        \item Selectfluor is an \ce{F+} equivalent.
+        \begin{itemize}
+            \item Very active and expensive.
+        \end{itemize}
+        \item You often put fluorine into molecules to block the site of oxidation; cytochrome enzymes do \ce{C-H} oxidation as a first step in metabolic excretion, and you can block this with fluorination to slow the pharmacokinetics.
+        \begin{itemize}
+            \item Very activated system, so probably can use a simple catalyst.
+            \item 2-halopyridines are \emph{extremely} activated toward oxidative addition as with S\textsubscript{N}Ar; much worse for 3-halopyridines.
+        \end{itemize}
+        \item If there's a perfect SM but it's only available from one place, the company will raise the price to whatever they want now that they know their compound is important. Also, what if there's a supply chain interruption?
+        \begin{itemize}
+            \item Companies like to have 3 sources as a general rule.
+        \end{itemize}
+        \item As it happens, the SM here is very cheap.
+        \begin{itemize}
+            \item Most fluoridation reactions use the Halex reaction.
+            \item Often \ce{KF} and a ton of heat; the fluoro compounds are more stable, so they come out with thermodynamic equilibration.
+        \end{itemize}
+        \item Each of these steps can be carried out on a large scale, and the most expensive thing anywhere here is \ce{CsF}.
+    \end{itemize}
+    \item Vinamidium salts are more stable 1,3-dialdehyde equivalents.
+    \begin{itemize}
+        \item 1,3-dialdehydes do self-Claisen condensations and all kinds of nasty things.
+        \item Developed at Merck, then used on scale there.
+        \item Can be used to make tri-substituted pyridines!
+        \item 2-methyl group is perfectly setup for lateral deprotonation.
+        \item PPA (polyphosphoric acid) is a common strong acid. You isomerize the double bond and then do Friedel-Crafts on the aromatic ring.
+        \begin{itemize}
+            \item Again, heat is better than a fancy catalyst.
+        \end{itemize}
+    \end{itemize}
+    \item Process vs. medchem.
+    \begin{itemize}
+        \item Mitsunobu, reduction of nitro (with stoichiometric iron and acetic acid as opposed to Ni, Pd, Pt + \ce{H2}).
+        \item Donating groups allow for mild halogenation.
+        \item Miyaura borylation.
+        \item This is an ugly synthesis; protecting groups are never great, and \ce{Pd} at the end increases the chance of contamination.
+        \item Made better at process scale! Still has final \ce{Pd} issue, though.
+    \end{itemize}
+    \item Very non-activated \ce{NH} requires \ce{Pd} catalysis.
+    \begin{itemize}
+        \item Xantphos, developed at Dutch Shell for hydroformylation but repurposed for \ce{C-N} bond formation.
+    \end{itemize}
+    \item Key synthetic transformations using pyridine.
+    \begin{itemize}
+        \item S\textsubscript{N}Ar with heteroatom nucleophiles (\ce{O}, \ce{N}, \ce{S}), or with malonate anions.
+        \item \ce{PPh3} can remove an \emph{N}-oxide because of strong \ce{P=O} bond formation!
+        \item Alternative to \ce{R$''$MgX}: Zincke chemistry!
+    \end{itemize}
+\end{itemize}
+
+
+
 
 \end{document}
