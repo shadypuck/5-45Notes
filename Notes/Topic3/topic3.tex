@@ -1,0 +1,315 @@
+\documentclass[../notes.tex]{subfiles}
+
+\pagestyle{main}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
+\setcounter{chapter}{2}
+
+\begin{document}
+
+
+
+
+\chapter{\texorpdfstring{$\bm{\pi}$}{TEXT}-Excessive Heterocycles}
+\section{Imidazoles, Pyrazoles, and Indoles}
+\begin{itemize}
+    \item \marginnote{2/20:}Announcements.
+    \begin{itemize}
+        \item PSet 2 will not be posted yet because most of the material won't be covered until next Tuesday.
+        \begin{itemize}
+            \item We'll still have it a week before the exam, and the exam will not be so indole focused.
+        \end{itemize}
+        \item The practice exams are also still to come.
+        \item Lots of material and esoteric reactions in these slides; Steve will not discuss it all, nor expect that we remember it all.
+    \end{itemize}
+    \item \textbf{Imidazole} and \textbf{benzimidazole}.
+    \begin{itemize}
+        \item Important constituents in pharmaceuticals and biologically important substructures (e.g., histidine; nucleophile in salt bridges; constituent in DNA).
+        \item Proteins are often purified on nickel columns that act on histidines (see "HisTags").
+    \end{itemize}
+    \item Structure and reactivity.
+    \begin{itemize}
+        \item Often put into structures to increase water solubility (can completely hydrogen-bond; both donor and acceptor)!
+        \item Combination of pyridine and pyrrole: One lone pair orthogonal to the $\pi$-system, and one pyrrole-like pair that does not typically react with electrophiles.
+        \item Imidazole is less nucleophilic than pyrrole at carbon.
+        \item Rapid tautomerization complicates reactivity; if you want to target a particular site, you might get a surprise. But there are ways to overcome this that we'll discuss.
+        \item Imidazole is amphoteric: One \ce{H} is moderately acidic (not super, but not like \ce{C-H} either), and then can protonate. Much less acidic than oxazole or thiazole because of resonance.
+        \item Alkylation at nitrogen occurs, followed by deprotonation, followed by more reactivivity.
+    \end{itemize}
+    \item Reactions of imidazole.
+    \begin{itemize}
+        \item Deprotonation (with a strong base, e.g., \ce{NaH}, LDA, \ce{NaHMDS}) creates a strong base that monoalkylates.
+        \item Selective alkylation at nitrogen?
+        \begin{itemize}
+            \item Target \ce{N^2} with protection (acylation), \textbf{ethyl Meerwein's reagent}, and deacylation.
+            \item Target \ce{N^1} with Buchwald amination (Steve: "I hate the amination, should've gotten rid of the amination").
+        \end{itemize}
+        \item EAS.
+        \begin{itemize}
+            \item Better than benzene, worse than pyrrole.
+            \item Nitration breaks the symmetry of the molecule. Easier to put nitrogen group next to non-positively charged nitrogen.
+            \item Polybromination is also possible.
+            \item Selective bromination occurs analogously to with pyridine (see Figure \ref{fig:TTQPy3Br}); attack at nitrogen, then carbon, then rearomatization.
+            \item More "trivial" reactions.
+        \end{itemize}
+        \item S\textsubscript{N}Ar.
+        \begin{itemize}
+            \item Moves the lone pair onto the nitrogen, as we've seen.
+        \end{itemize}
+        \item Directed metallation.
+        \begin{itemize}
+            \item SEM (popularized by Bruce Lipschutz at UC-Santa Barbara) is the best protecting group. Can be removed by fluoride, which induces a loss of ethylene and formaldehyde.
+            \item Selective deprotonation between the two nitrogens (fairly standard, steric factors considered).
+            \item Can then do again.
+        \end{itemize}
+        \item Lithium-halogen exchange.
+        \begin{itemize}
+            \item LiX exchange occurs faster than deprotonation, then deprotonation occurs.
+            \item To ensure that everything occurs in the right order, people will often add a strong base (e.g., \ce{LiHMDS}) first; then add butyl lithium to do the LiX exchange.
+        \end{itemize}
+        \item Radical chemistry, e.g., the Minisci reaction.
+        \begin{itemize}
+            \item Photochemistry as well, but that would be a whole other course; Steve won't discuss, take 5.44 with Alison if you want to hear more.
+            \item Minisci (radical decarboxylation) predates photoredox catalysis for generation of carbon-centered radicals.
+            \item Second example: Nucleophilic radical can add to electron-deficient (because of the aldehyde) carbon center.
+        \end{itemize}
+        \item Quaternary imidazolium salts.
+        \begin{itemize}
+            \item Subsequent base yields ylide, i.e., the NHC (NHCs ubiquitous in catalysis).
+        \end{itemize}
+    \end{itemize}
+    \item Selected imidazole disconnections.
+    \begin{itemize}
+        \item Some should look familiar, and some may not.
+        \item The first one to talk about individually is the \textbf{Debus-Radziszewski} (imidazole synthesis).
+        \begin{itemize}
+            \item From a long, long time ago. First reported synthesis of imidazole.
+            \item Combines a 1,2-diketone, aldehyde, and ammonia.
+            \item Proposed mechanism has zero evidence, but some variation is probably correct.
+            \begin{itemize}
+                \item Aldehyde is probably converted to imine \emph{before} formation of the diimine on the 1,2-diketone.
+                \item Then condensation.
+                \item Then tautomerization.
+            \end{itemize}
+        \end{itemize}
+        \item Synthesis 1: Analogous to the Pinner reaction; very common.
+        \item Van Leusen: Analogous to the pyrrole synthesis of the same name.
+        \item Synthesis 4.
+        \begin{itemize}
+            \item Aminoacetal an acetal for stability reasons.
+            \item Attack to imine and then cyclization.
+        \end{itemize}
+        \item Synthesis 6: Paal-Knorr type.
+    \end{itemize}
+    \item Example synthesis: Conivaptan.
+    \begin{itemize}
+        \item Pinner-type synthesis.
+    \end{itemize}
+    \item Example synthesis: Estrogen receptor.
+    \begin{itemize}
+        \item \ce{N-} adds to nitrile.
+        \item Workup to amidine.
+        \item Condense with $\alpha$-bromoacetaldehyde to form the imidazole.
+    \end{itemize}
+    \item Example synthesis: Obesity.
+    \begin{itemize}
+        \item $\alpha$-bromopyruvate.
+    \end{itemize}
+    \item Van Leusen.
+    \begin{itemize}
+        \item TosMIC: Stabilized isocyanide.
+        \item Easily deprotonated, add to the imine, attack at carbene, proton transfer, losing the sulfonate.
+    \end{itemize}
+    \item COX-2 inhibitors.
+    \begin{itemize}
+        \item Historically important chemistry.
+        \begin{itemize}
+            \item Merck billion-dollar molecule.
+            \item Has to do with pain.
+            \item Aspirin (but disrupts stomach) $\to$ NSAIDs (ibuprofen, endoproxin) $\to$ tylenol (but dissolves liver) $\to$ opioids (but addictive).
+            \item Most things inhibit both pathways (COX-1 and COX-2), but this drug was selective for COX-2, specifically. But this (Vioxx) causes heart-valve problems (and Merck had to pull it from the market at great loss).
+            \item Celebrex as well, but the company died and had to be sold to Pfizer.
+        \end{itemize}
+    \end{itemize}
+    \item Example synthesis: Like Lipitor, another statin compound.
+    \begin{itemize}
+        \item Glycine benzyl ester is a fairly standard protected amino acid.
+        \item Treat it to form something, which after cleavage can be acylated.
+        \item Ester to benzylamine.
+        \item Cyclize with a primary amine to stitch in the nitrogen.
+        \item Cyclize (fairly typical with statins).
+    \end{itemize}
+    \item Example synthesis: Debus-Radziszewski chemistry.
+    \begin{itemize}
+        \item Microwave chemistry was huge, but the bubble has burst at this point. You still see it here and there, but not much.
+        \item Get to the asymmetric $\alpha$-diketone with a \ce{SeO2} oxidation.
+        \item What method you'll use commonly depends on what you have and what you have successfully been able to do previously.
+        \item Ester, cross-Claisen, hydrolysis/decarboxyliation could also allow you to make a series of different imidazoles.
+    \end{itemize}
+    \item Example synthesis: pan-JAK inhibitor.
+    \begin{itemize}
+        \item Lab synthesis.
+        \begin{itemize}
+            \item Buy the phenol and protect it as the SEM.
+            \item Miyaura borylation, Suzuki-Miyaura coupling, Pinner salt formation, convert to the imidium system.
+            \item Cleave with acid to liberate the carbonyl and do the intramolecular cyclization.
+        \end{itemize}
+        \item Scale synthesis.
+        \begin{itemize}
+            \item Removed Miyaura borylation with Grignard, etc.
+            \item Gets a byproduct, but it's inactive.
+            \item Many telescoped steps.
+            \item You need to worry about the form of the crystal that recrystallizes (there is a whole field of \textbf{crystal engineering}); is it too big, too small, etc.?
+        \end{itemize}
+    \end{itemize}
+    \item Example synthesis: P13K $\beta$-Sparing.
+    \begin{itemize}
+        \item No lateral deprotonation, despite intuition!
+        \item Weinreb amide (for adding carbanions to carbonyl derivatives).
+        \item Alkylate on nitrogen, do S\textsubscript{N}Ar (could also be benzyne).
+        \item Palladium catalyst for final Suzuki-Miyaura cross-coupling.
+        \begin{itemize}
+            \item Can do it in the presence of \emph{a lot} of basic functional groups.
+            \item More evidence why this chemistry won the Nobel prize.
+        \end{itemize}
+    \end{itemize}
+    \item 1,2-azoles.
+    \begin{itemize}
+        \item We'll talk mostly about pyrazole, but there's also isothiazole and isoxazole.
+        \item Dimeric structure in solution.
+        \item Also has tautomerization.
+    \end{itemize}
+    \item A few reactions (similar again).
+    \begin{itemize}
+        \item N lone pair in and out of the aromatic system.
+        \item Acylation $\to$ deprotonation again.
+        \item Selective halogenation can be rationalized based on arrow-pushing and charges.
+        \item Can acylate on carbon by sterically blocking the site that will typically react first; thus, more engineered and less useful.
+        \item Under neutral conditions, alkylation occurs at the lone pair.
+        \begin{itemize}
+            \item Under basic conditions, we form the thermodynamic product.
+        \end{itemize}
+        \item Lots of companies have wanted to \emph{N}-arylate at the thermodynamically unfavored nitrogen recently, and have needed catalysts to do that.
+        \item Lithiation.
+    \end{itemize}
+    \item Pyrazole syntheses.
+    \begin{itemize}
+        \item More condensation chemistry.
+        \begin{itemize}
+            \item Always look for bisnucleophiles and biselectrophiles!
+            \item This is a very common disconnection.
+        \end{itemize}
+        \item Dipolar cycloadditions can also be employed (not as common, but occur on occasion).
+        \item Knorr gets his own synthesis.
+        \begin{itemize}
+            \item This is good for symmetric pyrazoles.
+        \end{itemize}
+        \item Propynyl ketones act as the synthetic equivalent of a $\beta$-dicarbonyl.
+        \item Cyclopropane thing synthesis.
+        \begin{itemize}
+            \item Take the diketone, halogenate in between, nucleophilic displacement. $\alpha$-aryloxy ketone could feed into a cross-Claisen condensation.
+        \end{itemize}
+        \item Aside: Whenever you see a structure, think about whether you can get to it using chemistry that you learned in first-year organic; that's what people want to use.
+        \item Diazomethane can be generated in flow now, so it can be used on scale.
+        \begin{itemize}
+            \item Explosive and toxic; precursors are also nasty (mutagenic), so bad on lab scale, too.
+        \end{itemize}
+        \item What if the condensation has $2:1$ selectivity in the wrong direction?
+        \begin{itemize}
+            \item Try a dipolar cycloaddition.
+            \item Treat a thing with base to do a 1,3-elimination. Then do this with an aryl acetylene (looks good, but hard to handle and explosive, so use an equivalent).
+            \item As an equivalent, use the enamine, which is an elimination away from the acetylene.
+            \item They did this chemistry on a huge scale, which is wild to Steve.
+        \end{itemize}
+        \item In process chemistry, they will do almost anything (as long as its legal), even using brutal conditions, if necessary.
+    \end{itemize}
+    \item DGAT-2.
+    \begin{itemize}
+        \item Cyclopropanated benzimidazole derivative.
+        \item Reduce to the 1,2-diamino derivative. Then other piece for condensation.
+        \item Other piece: $\alpha$-alkylation twice. Can't do S\textsubscript{N}2 with cyclopropanes because the transition state wants to be \ang{120}, but the cyclopropane is \ang{60}.
+        \item GMP (General Manufacturing Procedure) synthesis (control access to the reactors, everyone is in clean suits, etc.). Very expensive, but makes sense if the compound is going into a person.
+        \item Got starting material from $\gamma$-bromocarboxylic acid via Hell-Volhard-Zelinsky reaction, in Steve's guess.
+        \item Cleave the ester under acidic conditions; in basic, you would have competitive S\textsubscript{N}Ar?? (easier to control the quality of acetyl chloride and methanol than gaseous chloride, so as to generate \ce{HCl} \emph{in situ}).
+        \item Do this in the presence of Boc-anhydride to form the Boc-amide.
+        \item Use T3P (a reagent to make amides).
+        \item Then cleave the Boc.
+    \end{itemize}
+    \item Indoles.
+    \begin{itemize}
+        \item Jeremy Knowles (Steve's doctoral advisor) used to make fun of people who made indoles, yet Steve ended up making them regardless.
+        \item Most widely occuring ones: (\emph{S})-tryptophan and seratonin (responsible for sleep, depression, anxiety, etc.).
+        \item SSRIs: Selective seratonin uptake inhibitors.
+        \begin{itemize}
+            \item Triptans are antimigrane drugs, very structurally related to seratonin.
+            \item Migraines are financially huge to pharmaceutical companies. No generally successful solutions yet.
+        \end{itemize}
+        \item LSD.
+    \end{itemize}
+    \item Reactions of indoles.
+    \begin{itemize}
+        \item 5-membered ring is always the most reactive part.
+        \item \SI{6}{\molar} sulfuric acid reveals that protonation at C3 is most favorable.
+        \begin{itemize}
+            \item $\pKa=-3.5$, so does not protonate easily.
+        \end{itemize}
+        \item React with electrophiles at C3.
+        \begin{itemize}
+            \item Example: Halogenation occurs at C3.
+        \end{itemize}
+        \item Acylation.
+        \begin{itemize}
+            \item Acidic conditions: C3.
+            \item Basic conditions: At the nitrogen.
+            \item C3-blocking leads to C2 reactivity next.
+        \end{itemize}
+        \item Excess of methyl iodide and heat leads to tetramethylated isoindole structure. Write how this forms!!
+        \begin{itemize}
+            \item Skatole (one of the worst smelling compounds in the world) is the product; look it up!
+        \end{itemize}
+        \item \ce{BF3}-etherate.
+        \begin{itemize}
+            \item Proceeds through spirocyclic intermediate (very common chemistry for indoles), as proven by isotopic labeling.
+            \item Aside: On mechanisms.
+            \begin{itemize}
+                \item You used to have cumulative exams and 2 foreign languages as PhD requirements.
+                \item Frank Westheimer (famous guy who invented chemical biology) was one of Steve's "cumes." One question he gave was "cite the original experimental evidence for these 20 famous findings;" Steve had no idea.
+            \end{itemize}
+        \end{itemize}
+        \item Mannich-type reactions.
+        \begin{itemize}
+            \item $\pH=6$ is the Goldilocks range.
+            \item Pictet-Spengler type transformation, historically used in alkaloid synthesis.
+        \end{itemize}
+        \item With base.
+        \begin{itemize}
+            \item NaH is fine, but not great on scale (usually shipped as mineral oil dispersion).
+            \item EtMgI is shipped around in tank cars and it forms a base just fine.
+        \end{itemize}
+        \item Directed metallation.
+        \begin{itemize}
+            \item BOC is DMG, then deprotonate at C2, then electrophile.
+            \item Cooler way: Throw dry ice in (\ce{CO2} source). Treat with more to form dianion, then deprotect.
+        \end{itemize}
+    \end{itemize}
+    \item Reactions of gramine.
+    \begin{itemize}
+        \item Tryptophan.
+        \begin{itemize}
+            \item Put something on that isn't a great leaving group.
+            \item Put on an electron conduit that allows you to push out bad leaving groups.
+            \item This is a way to make racemic tryptophan.
+        \end{itemize}
+        \item N-methylation.
+        \begin{itemize}
+            \item TIPS (big) allows for C4 lithiation.
+            \item This is important because the \textbf{Fischer indole syntehsis} (typical) is not good at making 4-substituted indoles.
+        \end{itemize}
+    \end{itemize}
+    \item We'll start with indole synthesis next time.
+    \item Next Tuesday, after class: PSet 2 and previous years' exams.
+\end{itemize}
+
+
+
+
+\end{document}
