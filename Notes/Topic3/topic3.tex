@@ -311,5 +311,323 @@
 
 
 
+\section{Indoles, Indazoles, Thiophenes, and Furans}
+\begin{itemize}
+    \item \marginnote{2/25:}Announcements.
+    \begin{itemize}
+        \item Exam 1: Next Tuesday, in class, same format as the two previous exams.
+        \begin{itemize}
+            \item Purpose: Steve is required to give one.
+            \item Confirm what you know; have you paid attention, stayed awake, etc.? Some regurgitation.
+            \item What can you do with the material you know? Arrow pushing, etc. More like mechanistic problems.
+            \item A few synthesis problems.
+            \item Some aspects of metal-catalyzed cross-coupling. You don't need to know this ligand vs. that, but you should know the basic features of \ce{C-C} cross-coupling, basic steps of the reaction, what metal works, know some ligand, etc.
+            \item The exam will be \emph{distinct} from the previous exams.
+            \item Current difficulty (before the TA edits it): Moderate.
+            \item Today's lecture material is the end of what will be covered on the exam.
+        \end{itemize}
+        \item PSet 2 is much more indole-focused than the exam.
+    \end{itemize}
+    \item Synthesis of indoles.
+    \item \textbf{Bartoli} (indole synthesis): Vinyl grignard plus nitroarene.
+    \begin{itemize}
+        \item You have to believe it was discovered by accident, because it makes so little sense.
+        \item You need a relatively large \ce{R} group (bromine counts as relatively large).
+        \item You can write a mechanism (this is plausible, but it may or may not have any basis in reality).
+        \item Plausible mechanism: Nucleophilic attack at oxygen, collapse to a nitroso intermediate, nucleophilic attack, sigmatropic rearrangement, intramolecular attack, deprotonation and rearomatization, and then workup.
+        \item Example: Propenyl grignard gives 3-methyl substituted.
+        \item Indole's 7-position is not trivial to functionalize, so having a starting material with that position activated that you can then Heck couple to later (or do something else to) is super useful.
+    \end{itemize}
+    \item Now some more historically important indole syntheses.
+    \item \textbf{Leimgruber-Batcho} (indole synthesis): Mix \emph{ortho}-alkylated nitroarene with Brederech's reagent,\footnote{It appears that this is not actually "Brederech's reagent," but DMF-dimethylacetal.} and then heat it in DMF.
+    \begin{itemize}
+        \item Mechanism: Spontaneously generates a bit of methoxide to do lateral deprotonation. Then addition to the compound formed by expulsion of the methoxide. This gives enamine. Now magic chemistry: Reduce nitro group to an amine, then addition-elimination to indole.
+        \item It's not been carefully elucidated what does the reduction, but the guess is that using "tickle 3" (\ce{TiCl3}) does inner sphere addition to nitroso, reduction of the nitroso, etc. Not yet published what actually happens.
+    \end{itemize}
+    \item \textbf{Bischler} (indole synthesis): Mix an aniline with an $\alpha$-bromoacetaldehyde acetal.
+    \begin{itemize}
+        \item A base deprotonates the aniline, which then engages in S\textsubscript{N}2 bromide displacement.
+        \item Then, adding trifluoroacetic anhydride (TFAA) forms the \emph{N}-trifluoromethylacetal.
+        \item Trifluoroacetyl groups are very labile. Acetamides are often the bane of synthetic chemists (very hard to cleave), but trifluoroacetamides are much easier to cleave (sometimes too easy).
+        \item Stabilized oxocarbenium then does Friedel-Crafts type chemistry.
+    \end{itemize}
+    \item Protecting groups in general tend to fall off of indoles (e.g., Bocs, etc.). This is why you often have to resort to using a SEM, but those can be difficult to remove.
+    \item \textbf{Fischer} (indole synthesis): Mix an aryl hydrazine with a ketone.
+    \begin{itemize}
+        \item Most important.
+        \item Also had to be discovered by accident. Here are Steve's thoughts on its origin.
+        \begin{itemize}
+            \item Before NMR and IR, you had EA and melting point only. You determined molecular structure by making derivatives of certain functional groups and then taking melting points.
+            \item For example, \textbf{Tollens' reagent} (silver-based) was used to figure out if there was an aldehyde.
+            \item As another example, diphenylhydrazine was used to make a hydrazone. Hydrazones are super crystalline, so it's easy to get their melting point.
+            \item They were probably making a derivative, then realized that they made an indole!
+        \end{itemize}
+        \item Mechanism: Condensation to the aryl hydrazone, tautomerization to \textbf{ene-hydrazine}, $[3,3]$-sigmatropic rearrangement, rearomatization. Then ene or iminium formation.
+        \begin{itemize}
+            \item They did not know what sigmatropics were back then, so that definitely just happened.
+            \item To make an aryl hydrazine, you make the aryl diazonium salt and then reduce it (typically with \ce{SnCl2}).
+        \end{itemize}
+        \item Limitations.
+        \begin{itemize}
+            \item If \ce{R} and \ce{R$'$} are distinct, then the first intermediate can enolize two different ways, which leads to regioisomer formation.
+            \item Substituents at 4- or 6-positions on the aromatic ring lead to ambiguity in where the sigmatropic rearrangement can occur.
+            \item Forcing conditions (strong acid and heating) can lead to issues with sensitive functional groups (esp. aldehydes).
+        \end{itemize}
+        \item You can manipulate the system, though.
+        \begin{itemize}
+            \item Stronger vs. weaker acids modulate the direction of enolization. Kinetic vs. thermodynamic character; thermodynamic with the stronger acids.
+        \end{itemize}
+        \item Limitations are important to know because you want to know the plusses and minuses of each method.
+    \end{itemize}
+    \item \textbf{Reissert} (indole synthesis): \emph{ortho}-alkylated nitroarene, again, plus an oxalate.
+    \begin{itemize}
+        \item Strong base leads to lateral deprotonation, addition to $\alpha$-ketoester, then reduce to form the 2-ethylcarboxylate of indole.
+        \item Can then do addition at 3-position to form differentially substituted 2,3-disubstituted indole.
+    \end{itemize}
+    \item \textbf{Madelung} (indole synthesis): \emph{N}-\emph{ortho}-alkylarylamide collapses in strong base.
+    \begin{itemize}
+        \item Deprotonation, probably via the dianion, which closes to form the indole and then can be further modified.
+    \end{itemize}
+    \item \textbf{Hemetsberger} (indole synthesis): Collapse of an $\alpha$-azidoester on a styrene-type thing.
+    \begin{itemize}
+        \item Fancier and less safe.
+        \item The starting material can be made from benzaldehyde and \ce{R}-azidoacetate via Knoevenagel.
+        \item Mechanism: Photolyse to nitrene, which rearranges to azirine, which rearranges to the indole derivative.
+    \end{itemize}
+    \item Example synthesis: Applying the Leimgruber-Batcho indole synthesis.
+    \begin{itemize}
+        \item Introduce two sulfonyl protecting groups so that you can put the nitro group at the desired position.
+        \item Superheated steam is a classic way to do desulfonization.
+        \item Benzyl-protect the phenol group.
+        \item Do Leimgruber-Batcho.
+        \begin{itemize}
+            \item A pyrrolidine enamine is fairly common in this reaction.
+            \item Then convert to \textbf{semicarbazide}, to crystallize/isolate the intermediate before proceeding.
+            \item Now some 21st century chemistry: Reduce the nitro group and other functional group with iron under acidic conditions.
+        \end{itemize}
+        \item Then you add the aniline to the imine to form the aminal-type molecule, and collapse.
+    \end{itemize}
+    \item Example synthesis: Applying the Hemetsberger synthesis.
+    \begin{itemize}
+        \item Not often used because of "azidophobia."
+        \item Reduce and oxidize to make the aldehyde.
+        \item Knoevenagel condensation to Hemetsberger starting material.
+        \item Reflux to complete the synthesis.
+        \item Hydrolyze the ester to the acid, make the primary amide, and then dehydrate to the nitrile.
+        \begin{itemize}
+            \item Catalytic DMF with oxalyl chloride forms the Vilsmeier reagent, which can then chlorinate carboxylic acids before amidation.
+            \item Whereas \ce{POCl3} forms the Vilsmeier reagent via the enthalpic driving force of strong \ce{P=O} bond formation, \ce{(COCl)2} forms the Vilsmeier reagent via the entropic driving force of \ce{CO2 + CO} gas release.
+        \end{itemize}
+        \item Deprotonate with \ce{KH} first because if you don't, you might get reduction of the lithium/halogen-exchanged species.
+        \begin{itemize}
+            \item Essentially, pre-deprotonation allows us to reliably and quantitatively form the dianion, whereas if we go straight through 2 eq. \ce{{}^{\emph{n}}BuLi}, we'll do LiX exchange first (kinetically faster) and then the anion will deprotonate the \ce{N-H}. The result is that we'll have significant dehalogenated side product.
+        \end{itemize}
+        \item Then we add the anion into DMF, and warm/acidify to collapse.
+    \end{itemize}
+    \item In industry, they do tons of safety evaluations (both for safety and because blowing up a reactor is expensive).
+    \begin{itemize}
+        \item You want your calorimetry to give you \SI{80}{\celsius} between your reaction temperature and the exotherm.
+        \begin{itemize}
+            \item That way, no part of the mixture is likely to get hot enough to induce a runaway reaction.
+        \end{itemize}
+        \item This is another example of the use of flow chemistry (it can control thermal runaways).
+    \end{itemize}
+    \item Indazoles.
+    \begin{itemize}
+        \item There exist 1- and 2-indazoles.
+        \item 1-indazoles are more common.
+    \end{itemize}
+    \item Reactivity of indazoles.
+    \begin{itemize}
+        \item \emph{N}-substitution/protection.
+        \begin{itemize}
+            \item Under basic conditions, bonding at either nitrogen is equally likely.
+            \item Under acidic conditions, N2-THP substitution occurs more quickly but N1-THP substitution is more thermodynaically favorable.\footnote{\href{https://www.researchgate.net/figure/Scheme-1-Protection-of-an-alcohol-by-Thp-and-its-elimination-mechanism_fig2_314357461}{Mechanism}.}
+            \item Thus, strong acid gives exclusively N1-THP substitution while weak acid is more likely to give N2-THP substitution (or a mixture at long reaction times).
+        \end{itemize}
+        \item Palladium catalyzed \ce{C-C} or \ce{C-N} coupling.
+        \item It's often necessary to protect a nitrogen first.
+    \end{itemize}
+    \item Syntheses of indazoles.
+    \begin{itemize}
+        \item Route 1: Start with an \emph{ortho}-alkylated aniline, acidify, form diazonium, do lateral deprotonation and collapse.
+        \item Route 2: Start with an \textbf{isatin}, and then use diazonium conditions again.
+        \begin{itemize}
+            \item Isatins show up not infrequently in the literature.
+            \item Isatins can be made from anilines and chloral,\footnote{\href{https://synarchive.com/named-reactions/sandmeyer-isatin-synthesis}{Mechanism}.} then hydroxylamine, then strong acid can also be good.
+        \end{itemize}
+        \item Route 3: Start with bromofluorobenzaldehyde.
+        \begin{itemize}
+            \item In S\textsubscript{N}Ar, it's the electron-withdrawing nature of the substituent that's important for selectivity (so \ce{F-} is a better leaving group!).
+            \item Hydrazone formation first, and then intramolecular S\textsubscript{N}Ar.
+            \item With nitrile or ester SM, you get different 3-substituted indazoles.
+        \end{itemize}
+    \end{itemize}
+    \item Example synthesis: EGFR kinase inhibitor.
+    \begin{itemize}
+        \item Protect with THP, use Xantphos (a great ligand for ??) to do \ce{C-N} coupling.
+        \item Acrylamide inhibitor makes this another covalent inhibitor.
+    \end{itemize}
+    \item Moving on back to something.
+    \item Comparing $\pi$-excessive heterocycles: Structure.
+    \begin{itemize}
+        \item Furan is least aromatic, then pyrrole, then thiophene is most aromatic.
+        \begin{itemize}
+            \item All have one lone pair in aromatic system.
+        \end{itemize}
+        \item Furan is more reactive; lower cost to dearomatize.
+        \item Aromaticity trends are in accord with electronegativity of heteroatom (more electronegativity means less willing to delocalize).
+    \end{itemize}
+    \item Comparing $\pi$-excessive heterocycles: Relative rates of acylation with TFAA.
+    \begin{itemize}
+        \item Enormous reactivity difference: Pyrrole much more reactive than furan, more reactive than thiophene, and benzene doesn't react.
+        \item Selectivity.
+        \begin{itemize}
+            \item $\beta$-addition is preferred because you get a more stable carbocation at the 2-position.
+        \end{itemize}
+    \end{itemize}
+    \item Thiophenes.
+    \begin{itemize}
+        \item Thiophene, benzothiophene = benzo[b]thiophene, and benzo[c]thiophene.
+        \item Derived from two Greek words: Sulfur and shining.
+        \item Discovered as a contaminant in benzene.
+        \begin{itemize}
+            \item Benzene used to be sold as "thiophene-free." If you were doing electrophilic reactions, thiophene was more reactive so you would get contaminants derived from it.
+        \end{itemize}
+    \end{itemize}
+    \item Reactivity of takehiophene.
+    \begin{itemize}
+        \item Tetrabromothiophene can be made; tetraiodothiophene can't be made (iodines are too big).
+        \item Selective reduction can be done with palladium and \ce{NaBH4}: Oxidative addition is better at the $\alpha$-position, and one $\alpha$ is much less hindered than the other.
+    \end{itemize}
+    \item Syntheses: The usual suspects (Paal-Knorr), and then some other reactions (Hinsberg, Gewald [pretty useful], Fiesslemann).
+    \item Commercial synthesis of thiophene.
+    \begin{itemize}
+        \item Butane and elemental sulfur, with a catalyst at \SI{600}{\celsius}.
+        \item Another commercial route: Butanol and carbon disulfide.
+    \end{itemize}
+    \pagebreak
+    \item \textbf{Paal-Knorr} (thiophene synthesis): Heteroatom nucleophile and 1,4-diketone.
+    \begin{itemize}
+        \item Example heteroatom nucleophiles: \ce{H2S + HCl}, \ce{P4S10}, Lawesson's reagent.
+        \item Lawesson's reagent does sulfur Wittigs on a carbonyl: \ce{C=O} to \ce{C=S}. Driving force is strong \ce{P=O} bond formation.
+    \end{itemize}
+    \item \textbf{Fiesselmann} (thiophene synthesis).
+    \begin{itemize}
+        \item $\beta$-chloroenal comes from Vilsmeier reaction; we should remember this chloroformylation!!
+        \item Deprotonate, add, and dehydrate.
+    \end{itemize}
+    \item \textbf{Hinsberg} (thiophene synthesis).
+    \begin{itemize}
+        \item Related to Debus-Radziszewski in some ways.
+        \item 1,2-dicarbonyl and 1,3-bisnucleophile. Deprotonate, add, eliminate twice sequentially. Then dehydrate.
+        \item Heating in base leads to decarboxylation.
+    \end{itemize}
+    \item \textbf{Gewald} (thiophene synthesis).
+    \begin{itemize}
+        \item Carbonyl (usually ketone) and $\alpha$-EWG (usually cyano) cyanide.
+        \item This is bucket chemistry (large scale, inexpensive reagents).
+        \item Malononitrile forms dicyanoolefin, then reacts with amine to form compound shown there.
+        \item Knovenagel condensation, deprotonate to form a sulfur species (you can go between \ce{S1} to \ce{S_n}, but \ce{S1} will be reactive).
+        \item Then form an intermediate, followed by tautomerization.
+        \item Great if you don't have regiochemical ambiguity, but can give regioisomers.
+        \begin{itemize}
+            \item To get around this, you cheat! Regiochemically pure alkyl bromide (raises cost), and then react.
+        \end{itemize}
+    \end{itemize}
+    \item Example synthesis: Applying the Gewald reaction.
+    \begin{itemize}
+        \item Target: A weak fungicide with a silicon atom in it.
+        \begin{itemize}
+            \item Silicon atoms are becoming more and more common in pharmaceuticals and agrochemicals.
+        \end{itemize}
+        \item Discovery synthesis.
+        \begin{itemize}
+            \item Sandmeyer-type.
+            \item \ce{{}^{\emph{n}}BuLi} for LiX exchange, then TMSCl.
+            \item Acid chloride leads into amide.
+        \end{itemize}
+        \item This is a terrible scale synthesis, but it was "fit for purpose" (for discovery).
+        \begin{itemize}
+            \item Yield is bad, Sandmeyer uses a hazardous reagent, silylation at $-\SI{70}{\celsius}$, preparation of acid chloride causes 20\% protodesilylation.
+        \end{itemize}
+        \item Need to make rapid \SI{20}{\kilo\gram} and up to \SI{200}{\kilo\gram} batches.
+        \begin{itemize}
+            \item Solution: Wash out the unused material (30-40\% loss isn't environmentally good, but it can be good cost-wise).
+        \end{itemize}
+        \item To make even better, they went the cheating route: $\alpha$-chloro material.
+    \end{itemize}
+    \item Example synthesis: Ticlopedine (anti-platelet aggreation compound to lower blood pressure).
+    \begin{itemize}
+        \item 1st synthesis: Selectively benzylate and reduce.
+        \begin{itemize}
+            \item Problem: The thiophene-pyridine is not easy to access on scale.
+        \end{itemize}
+        \item Second synthesis: Start with thiophene-phenethyl amine, reductive amination on paraformaldehyde to cyclize, and reduce to the final product.
+    \end{itemize}
+    \item Skipping one.
+    \item Example synthesis: Tetrasubstituted thiophenes via directed metallation.
+    \begin{itemize}
+        \item Cross-coupling can be good.
+        \item Turbogrignard forms anion (stable at \SI{0}{\celsius} because it's thiophene; normal aromatic would eliminate to benzyne).
+        \item Then selective deprotonation via DMG and treatment with ethyl cyanoformate to form diester bromide.
+        \item Same base and \ce{S8} form \ce{S-} that is then alkylated.
+        \item Then Miyaura borylation with \ce{Pd({}^{\emph{t}}Bu3P)2} (not \ce{Pd({}^{\emph{t}}Bu2P)2}).
+        \item Then Suzuki-Miyaura cross-coupling.
+    \end{itemize}
+    \item Furan.
+    \begin{itemize}
+        \item Comes from Latin furfur (for bran), because furans come from agrochemical products; Quaker oats used to be the largest supplier of furan derivatives, esp. furfural.
+        \item Least aromatic of all 5-membered heterocycles.
+        \item In a variety of natural products and pharmaceuticals.
+        \item Before proton pump inhibitors, we had Zantac.
+    \end{itemize}
+    \item Structure of furan.
+    \begin{itemize}
+        \item One lone pair in aromatic system.
+        \item Quite acidic: $\pKa<36$ at the $\alpha$-position means we can deprotonate with \ce{{}^{\emph{n}}BuLi}.
+        \item Most electron density at oxygen; a lot, as well, at the $\alpha$- and $\beta$-carbons.
+        \item Industrial source: Pentose-rich matter (known as bran), then acidic hydrolysis, then dehydrate to furfural, then catalytic decarbonylation.
+    \end{itemize}
+    \item Reactivity of furan.
+    \begin{itemize}
+        \item Electrophilic reactions.
+        \begin{itemize}
+            \item \num{e11} times more reactive than benzene. About \SI[per-mode=symbol]{8}{\kilo\calorie\per\mole} (??) difference.
+        \end{itemize}
+        \item Bromination: Steve did this as a student in a poor hood and then began "bleeding profusely from [his] nose."
+        \item Cycloadditions.
+        \begin{itemize}
+            \item Reduction and then thermolyzing (with $\Delta$) is a cute way of making the diester.
+            \item Many cross-couplings.
+        \end{itemize}
+        \item Mannich substitution.
+        \begin{itemize}
+            \item Dimethylamine and formaldehyde to form iminium ion, then reacts electrophilically at the 5-position.
+        \end{itemize}
+        \item Achmatowicz derivative.
+        \begin{itemize}
+            \item Mechanism: Epoxidation of less-substituted double bond, ring-opening, then close.
+        \end{itemize}
+        \item Piancatelli: Don't worry about.
+        \item Lithiation: Kinetic vs. thermodynamic control for 2- vs. 3-substitution.
+    \end{itemize}
+    \item Synthesis of furans.
+    \begin{itemize}
+        \item Paal-Knorr has same starting material (1,4-diketone), but is more of a rearrangement.
+        \item \textbf{Feist-Benary}: Only works on aldehydes; $\alpha$-chloroketones have nucleophilic attack not at the aldehyde but at the carbon bearing chlorine.
+    \end{itemize}
+    \item Benzofuran = benzo[b]furan.
+    \begin{itemize}
+        \item First prep from Coumarin: Brominate and then treat with base to hydrolyze the lactone and decarboxylate with loss of bromine. Must have also been accidental.
+    \end{itemize}
+    \item More on the exam.
+    \begin{itemize}
+        \item You have to know stuff, but Steve also has to see that we can apply this stuff.
+    \end{itemize}
+\end{itemize}
+
+
+
 
 \end{document}
