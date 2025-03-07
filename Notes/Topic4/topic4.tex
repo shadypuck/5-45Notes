@@ -1,0 +1,260 @@
+\documentclass[../notes.tex]{subfiles}
+
+\pagestyle{main}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
+\setcounter{chapter}{3}
+
+\begin{document}
+
+
+
+
+\chapter{Organometallic Coupling Reactions}
+\section{Organometallic Coupling Reactions}
+\begin{itemize}
+    \item \marginnote{2/27:}Today: Organometallic transformations that are bread and butter for pharmaceutical chemists, both in discovery and at scale.
+    \item \textbf{Heck} (reaction).
+    \begin{itemize}
+        \item Many variants, but we'll focus on an aryl halide reacting with an olefin.
+        \item Feature: We regenerate the double bond, as opposed to most couplings which increase saturation.
+        \item Bio: Richard Heck.
+        \begin{itemize}
+            \item Started in industry at Hercules Corporation.
+            \item Moved to University of Delaware.
+            \item Was told that what he was doing wasn't interesting, so he quit, moved to Florida to raise orchids, and then moved to the Phillipines.
+            \item A brilliant person who made contributions to a lot of fundamental mechanistic organometallic chemistry, as well. He was just ahead of his time, doing this stuff in the 60s-80s.
+            \item Larry Overman, ??Tommy Oganachi??, etc. total synthesis people resurrected cross-coupling in academia and industry.
+        \end{itemize}
+        \item Basic mechanism.
+        \begin{itemize}
+            \item Oxidative addition.
+            \begin{itemize}
+                \item Forms a 16 electron, square-planar palladium species.
+                \item Generally can't bind another ligand to go to an 18 electron species; that's high energy, so you dissociate a ligand.
+            \end{itemize}
+            \item Ligand exchange.
+            \item Migratory insertion.
+            \item $\beta$-hydride elimination.
+            \begin{itemize}
+                \item Very common, but can be constrained (Fu chemistry).
+            \end{itemize}
+            \item Ligand exchange.
+            \item Reductive elimination.
+            \begin{itemize}
+                \item Running the reaction in the presence of a base drives the reaction by precipitation of the acid.
+            \end{itemize}
+        \end{itemize}
+        \item Tri-\emph{o}-tolylphosphine was the ligand of choice for a while, because it has ?? that makes it dissociate more easily during ligand exchange.
+        \item Small amounts of ?? can act as olefin isomerization catalysts and mess up reactions.
+        \item Regioselectivity: Aryl group typically goes to less-substituted carbon, and metal typically goes to the more-substituted carbon.
+        \begin{itemize}
+            \item Rationalization: Steric factors and electronic factors.
+            \item More electropositive palladium wants to go to the $\delta^-$ carbon.
+            \item There is an added ionic component to \ce{Pd-C} bonds with certain EWGs/EDGs. Steve had to keep this ionic character in mind during his early research on early transition metal catalysis.
+            \item Triflates can polarize palladium, and exaggerate this effect.
+        \end{itemize}
+    \end{itemize}
+    \item Palladium-catalyzed carbon-nitrogen cross-coupling.
+    \begin{itemize}
+        \item Much more challenging to generalize than \ce{C-C} couplings.
+        \begin{itemize}
+            \item With basic, nitrogen compounds, you have compounds that were previously used as ligands and compete for open coordination sites.
+            \item The balance is keeping palladium in solution ("you fear the precipitation of the dreaded palladium black") with ligands that don't let go.
+        \end{itemize}
+        \item Aryl halides and anilines are common.
+        \item Reagents.
+        \begin{itemize}
+            \item \ce{Pd(OAc)2} is relatively cheap, but it needs to be reduced before the chemistry starts.
+            \item \ce{Pd2(dba)3} is slightly more expensive, in the right oxidation state, but dba is hard to get rid of.
+        \end{itemize}
+        \item A history of ligands.
+        \begin{itemize}
+            \item Instead of amines, use amido-stannanes. Tri-\emph{o}-tolylphosphine ligands make this work (Migita, Kosugi). Amido-stannanes are terrible to work with, though.
+            \item Then the chemistry went to bidentate phosphines, then back to monodentate phosphenes, then NHCs.
+            \item Most widely used ligands: Xantphos and racemic BINAP.
+            \item BippyPhos was developed to get around patents that MIT held; ironically developed by one of Steve's former postdocs.
+        \end{itemize}
+        \item Proposed catalytic cycle.
+        \begin{itemize}
+            \item Particularly for \ce{C-N} coupling, what's really going on is very messy. You want to keep stuff on-cycle, but there's all sorts of off-cycle equilibria.
+            \item Oxidative addition.
+            \begin{itemize}
+                \item Used to be rate- and yield-determining, but no longer kinetically relevant.
+                \item Thus, it's better to not use aryl iodides now. Iodides are more expensive, their waste disposal is more expensive, and halogen loss is slower with sterically huge iodine.
+            \end{itemize}
+            \item There exists a sensitivity to aliphatic amines vs. anilines.
+        \end{itemize}
+        \item BINAP.
+        \begin{itemize}
+            \item Racemic BINAP is very cheap. BINAP was developed as a ligand for asymmetric hydrogenation by Noyori.
+            \item Racemates typically have a ??higher?? melting point than individual enantiomers (because of \textbf{eutectic mixtures}; recall from PChem).
+            \item Triarylphosphine: Good electron donor, but not a fantastic one. Thus, very good for aryl bromides and triflates (which have relatively easy oxidative addition); not good for iodides due to the formation (presumably) of bridging compounds.
+            \item Many solvents good.
+            \item Strong bases and weak bases both good.
+        \end{itemize}
+    \end{itemize}
+    \item Example synthesis: KRAS inhibitor.
+    \begin{itemize}
+        \item Up to \SI{300}{\kilo\gram} scale with BINAP!
+    \end{itemize}
+    \item Xantphos.
+    \begin{itemize}
+        \item Invented by Pete Van Leeuwen when he was at Dutch Shell for hydroformylation (how all linear and branched alcohols are prepared, as well as butyraldehyde).
+        \item Billions of dollars were spent trying to change the ratio of linear to branched butyraldehyde, and this came out of that.
+        \item It's a good surrogate for BINAP in many reactions.
+        \item Only works with very activated heteroaryl chlorides.
+        \begin{itemize}
+            \item Example: 2-chloropyridine is an honorary aryl bromide.
+        \end{itemize}
+        \item The slides list a good (albeit now a bit dated) review of the prior 10 years of cross-coupling.
+    \end{itemize}
+    \item Tri-\emph{t}-butylphosphine.
+    \begin{itemize}
+        \item Used in many coupling reactions of heterocycles.
+    \end{itemize}
+    \item Bulky mono-phosphines.
+    \begin{itemize}
+        \item Air-stable.
+        \item Tons have been prepared and legally sold; "more tons have probably been prepared and\dots not legally sold."
+        \item Steve reviews the benefits of tetrakis vs. single-coordinate debate.
+        \begin{itemize}
+            \item As the cone angle increases, the amount of \ce{L1Pd} increases.
+        \end{itemize}
+        \item It's only the interaction of the \emph{ipso}-carbon (bound to upper ring) with the palladium that matters, not the whole bottom ring as is often incorrectly drawn.
+        \item At some point, the ligand gets too big and you reach an unstable situation.
+    \end{itemize}
+    \item How do you form \ce{Pd^0}?
+    \begin{itemize}
+        \item It doesn't matter how active your catalyst is if you never form it!
+        \begin{itemize}
+            \item Steve has often told his students to confirm that their catalyst is being formed if a reaction isn't working.
+        \end{itemize}
+        \item Out-of-the-bottle \ce{Pd^0} complexes come with extra-ligand baggage.
+        \item Kinetic studies by ?? have really shown that extra dba slows reations.
+    \end{itemize}
+    \item Solution: Mechanism-based activation.
+    \begin{itemize}
+        \item Put the middle of your catalytic cycle into your pre-catalyst! Then you get deprotonation, reductive elimination, etc.
+        \item Biscoe developed the first one, and it worked. Could make it on a \SI{100}{\gram} scale. But if you put it in solution, it would decompose.
+        \item Yong could do multi-kilo synthesis, very simple preparation.
+        \item Carbazoles aren't cool in Europe (environmental concerns).
+    \end{itemize}
+    \item Coupling of anilines and aryl chlorides.
+    \begin{itemize}
+        \item Papers often get into JACS or \emph{Science} with really active catalysts (0.01-0.05 mol\%), but in Steve's opinion, there's no point to these catalysts if nobody wants any of the compounds they can be used to produce (i.e., if substrate scope is too small).
+        \item The vast majority of synthetic methods aren't useful in any real circumstances. What matters is if you can do the chemistry on complicated substrates.
+        \item The vast majority of people practicing the chemistry are in discovery chemistry, so you should target your work to them.
+    \end{itemize}
+    \item Example synthesis: Gleevec.
+    \begin{itemize}
+        \item This is great, even though you've got a free \ce{NH} and tons of different nitrogens.
+        \item Common issue: Substrates and products can have poor solubility.
+    \end{itemize}
+    \item Example synthesis: Amgen compound.
+    \begin{itemize}
+        \item Optimized catalytic conditions.
+        \item Functionalized silica gel with thiourea stuff helps get rid of the palladium.
+    \end{itemize}
+    \item Wacker oxidation.
+    \begin{itemize}
+        \item Commerically makes acetaldehyde from ethylene.
+        \item Amazingly efficient: Low price difference between acetaldehyde and ethylene so it \emph{has} to be super efficient.
+        \item Palladium and copper, air and catalytic acid.
+        \item The palladium in this reaction \emph{loves} terminal olefins.
+        \item You form a cationic \ce{Pd^{II}} complex that binds the olefin. Water adds, enolization to the ketone.
+    \end{itemize}
+    \item Lou Hegedus's chemistry.
+    \begin{itemize}
+        \item Like Heck, he was too far ahead of his time for his own good. Avid fisherman. If he had invented it 20 years later, he would have been a superstar, but at the time, nobody thought it could be used.
+        \item This is ring-closing Wacker oxidation!!
+        \item Can be used for indole synthesis.
+        \item $\pi$-allyl (Tsuji-Trost) chemistry for the bottom left step.
+        \item Uses palladium for every step in this synthetic scheme! Like a competition to see how much palladium you can do.
+    \end{itemize}
+    \item \textbf{Cacchi} (indole synthesis).
+    \begin{itemize}
+        \item \emph{ortho}-alkynyl aniline, with a protected N.
+        \item Net transformation: \emph{trans}-addition of a nitrogen and an aryl group across an alkyne.
+        \item General principle: If you can do it once, it's good; if you can do it twice, it's better.
+        \begin{itemize}
+            \item Thus, it's great that you can do it at two sites in the bottom example!
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Larock} (indole synthesis).
+    \begin{itemize}
+        \item Larock (now retired from ISU, interesting chemistry in the 70s).
+        \item Quite wide scope; can now be done with bromides and chlorides.
+        \item You essentialy annulate on the rest of the indole.
+    \end{itemize}
+    \item \textbf{Mori-Ban} (indole synthesis).
+    \begin{itemize}
+        \item Heck-type palladium coupling.
+        \item Used by Jim Cook to make substituted tryptophan derivatives.
+        \item \textbf{Sch\"{o}llkopf's reagent} is an anionic amino acid equivalent.
+    \end{itemize}
+    \item \textbf{Merck} (indole synthesis).
+    \begin{itemize}
+        \item Highlights the limitations of the Larock indole synthesis.
+        \item DABCO is the ligand; a very common base used in pharmaceutical chemistry.
+        \item Condense to the enamine, oxidative addition, attack at \ce{Pd^{II}}, then reductive elimination and aromatization.
+    \end{itemize}
+    \item More on the Fischer indole synthesis.
+    \begin{itemize}
+        \item Limitation: Requires aryl hydrazines.
+        \begin{itemize}
+            \item Potent skin sensitizers, and have a multistep synthesis.
+        \end{itemize}
+        \item So\dots
+        \begin{itemize}
+            \item Almost any palladium catalyst will form the desired aryl hydrazine \emph{in situ}, and then we can do the Fischer indole synthesis.
+            \item This is the \textbf{Buchwald modification} (of the Fischer indole synthesis).
+        \end{itemize}
+    \end{itemize}
+    \item Example: Non-nucleotide reverse transcriptase inhibitor.
+    \begin{itemize}
+        \item Can do a second functionalization with the Fischer indole variant.
+    \end{itemize}
+    \item Cu-catalyzed \ce{C-N} bond formation.
+    \begin{itemize}
+        \item History.
+        \begin{itemize}
+            \item Started much earlier than palladium chemistry.
+            \item This is Ullmann and Goldberg chemistry.
+            \item Problem: They didn't have much mechanistic understanding, so they thought ligands were bad for the reaction.
+            \item Stoichiometric strong base and very polar solvents meant that high temperatures were required.
+            \item So the chemistry worked in some cases and not in others.
+            \item But in the 1990s, this chemistry was brought back to the fore and ligands were developed.
+        \end{itemize}
+        \item Aside/maxim: The most expensive thing you have in discovery chemistry is time, so you just want stuff to work as rapidly as possible.
+        \item Many ligands good.
+        \begin{itemize}
+            \item Very different selectivities.
+        \end{itemize}
+        \item Amides is the \textbf{Irma Goldberg coupling}.
+        \item Ullmann discovered the original chemistry; Ullmann and Goldberg were married!
+        \item You want the ligands to be good enough that multiple nitrogen species won't bind.
+        \item Many different proposed mechanisms.
+        \begin{itemize}
+            \item Oxidative addition/reductive elimination has the most support so far.
+            \item Caveat: Sensitivity of the reaction to the electronic nature of the aryl halide (think $\rho$ and Hammett plots). For palladium-catalyzed oxidative addition, $\rho\approx 3.5$, so it's quite sensitive to the electronic environment. But in copper chemistry, $\rho\approx 0.3-0.5$.
+            \item Additionally, copper is much more sterically hindered at the substrates.
+        \end{itemize}
+        \item Ma's oxalamide ligands; Steve agrees with his interpretation.
+        \item Copper doesn't tend to work for aryl triflates. It probably is some kind of coupled electron transfer.
+        \item Primary amides and small-ring $\beta$-lactams are good to use.
+        \item People say that sulfur and nitrogen poison palladium, but there are exceptions.
+        \item Goldberg reaction.
+        \begin{itemize}
+            \item Irma Goldberg broke the glass ceiling because her reactions were just that important.
+        \end{itemize}
+    \end{itemize}
+    \item Applications with diamine ligands.
+    \begin{itemize}
+        \item Doing the chemistry in the presence of added iodide does the copper chemistry more efficiently.
+    \end{itemize}
+\end{itemize}
+
+
+
+
+\end{document}
