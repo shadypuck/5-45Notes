@@ -1,0 +1,1645 @@
+\documentclass[../notes.tex]{subfiles}
+
+\pagestyle{main}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
+\setcounter{chapter}{4}
+
+\begin{document}
+
+
+
+
+\chapter{Exam 1}
+\section{Exam 1 Review Sheet}
+\begin{itemize}
+    \item \marginnote{3/4:}Important heterocycles and their key properties.
+    \begin{itemize}
+        \item Pyridine.
+        \begin{itemize}
+            \item $\pi$-deficient ring: $\delta^+$ on $\alpha$- and $\gamma$ carbons, $\delta^-$ at $\beta$-carbon.
+            \item Reactivity.
+            \begin{itemize}
+                \item EAS: Bad, except as \emph{N}-oxide.
+                \item S\textsubscript{N}Ar: Good, especially at the $\alpha$-carbons. Electrophile coordination can induce a 10 order of magnitude rate increase (see Figure \ref{fig:TTQPy4Cl}), and can even drive dearomatization (as in \ce{NAD+}/NADH).
+            \end{itemize}
+            \item Acidity: $\gamma>\beta>\alpha$ ($\delta^+$ without $\alpha$-effect, no $\alpha$-effect, $\alpha$-effect).
+            \item Basicity: $\pKa\approx 5.5$ (modulated by substituents).
+            \item Nucleophilicity: Modulated by substituents (e.g., pyridine vs. DMAP).
+            \item Pyridine-containing drug: Nicotine.
+        \end{itemize}
+        \item Pyridone.
+        \item Quinoline.
+        \begin{itemize}
+            \item Quinoline-containing drug: Quinine.
+        \end{itemize}
+        \item Isoquinoline.
+        \begin{itemize}
+            \item Reactivity.
+            \begin{itemize}
+                \item More reactive on non-heterocyclic portion.
+                \item EAS at 5- and 8-positions.
+                \item S\textsubscript{N}Ar \emph{always} at 1-position.
+            \end{itemize}
+        \end{itemize}
+        \item Quinolone.
+        \begin{itemize}
+            \item Quinolone-containing drug: Ciprofloxacin.
+        \end{itemize}
+        \item Pyridazine.
+        \begin{itemize}
+            \item Reactivity: Easier to protonate because of unfavorable $\alpha$-effect (in neutral form).
+        \end{itemize}
+        \item Pyrimidine.
+        \begin{itemize}
+            \item Reactivity.
+            \begin{itemize}
+                \item Relative to pyridine: Better at S\textsubscript{N}Ar, worse at EAS.
+                \item More reacrtive at 4- than 2-position (double $\alpha$-effect is bad).
+            \end{itemize}
+            \item Pyrimidine-containing drug: Anti-asthma agents.
+        \end{itemize}
+        \item Pyrrole.
+        \begin{itemize}
+            \item Protonation at $\alpha$-carbons ($\pKa=-3.8$).
+            \item $\pi$-excessive ring: Slightly more reactive toward EAS at $\alpha$- than $\beta$-carbons, though can vary depending on the type of carbocation formed??
+            \item Pyrrole-containing drug: Lipitor.
+        \end{itemize}
+        \item Imidazole.
+        \begin{itemize}
+            \item Hydrogen-bonds well.
+            \item Undergoes tautomerization.
+            \item $\pKa{}_1=14.5$, $\pKa{}_2=7.1$.
+            \begin{itemize}
+                \item Oxazole's $\pKa=0.8$, thiazole's $\pKa=2.5$ (no equal-energy resonance form).
+            \end{itemize}
+            \item Reactivity: Good at EAS (but not as good as pyrrole).
+            \item Imidazole-containing natural product: Histidine.
+        \end{itemize}
+        \item Pyrazole.
+        \begin{itemize}
+            \item Dimeric in solution (due to hydrogen bonding).
+            \item Tautmerization: Hydrogen prefers to be farther away from bulky substituents.
+            \item Reactivity.
+            \begin{itemize}
+                \item EAS at 4-position (halogenation, formylation, etc.)
+            \end{itemize}
+            \item Pyrazole-containing drug: DGAT-2 inhibitors.
+        \end{itemize}
+        \item Indole.
+        \begin{itemize}
+            \item Reactivity.
+            \begin{itemize}
+                \item 5-membered ring is most reactive.
+                \item EAS at 3-position.
+                \item Basic conditions can make \ce{N} more nucleophilic than C3 (e.g., for acylation).
+                \item Alkylation: C3, C3 $\to$ C2, C3 $\to$ deprotonation, \ce{N}.
+                \item Deprotonation at C2 (esp. with Boc DMG).
+            \end{itemize}
+            \item $\pKa=16.2$ for the nitrogen proton.
+            \item Indole-containing natural product: Strychnine, tryptophan.
+        \end{itemize}
+        \item Indazole.
+        \begin{itemize}
+            \item Indazole-containing drug: EGFR inhibitor.
+        \end{itemize}
+        \item Thiophene.
+        \begin{itemize}
+            \item Thiophene-containing natural product: Echinothiophene.
+        \end{itemize}
+        \item Furan.
+        \begin{itemize}
+            \item Acidity: $\pKa\approx 35.6$ ($\alpha$-carbons).
+            \item Furan-containing drug: Zantac.
+        \end{itemize}
+    \end{itemize}
+    \item Pyridine reactivity.
+    \begin{itemize}
+        \item Directed metallation.
+        \begin{itemize}
+            \item Lithiation is reversible, hence why it is observed as occurring \emph{thermodynamically} at the $\gamma$-position over \emph{kinetically} at the $\alpha$-position.
+            \item DMGs: All the usual suspects ($3^\circ$ amides, methoxy, carbamates, etc.).
+            \item DMGs (for $\pi$-deficient heterocycles): Halogens and pseudo-halogens (\ce{F}, \ce{Cl}, \ce{CF3}, \ce{CO2-}).
+            \begin{itemize}
+                \item \ce{Br} sometimes included, but may prefer to do lithium/halogen exchange.
+                \item \ce{MeO} is stronger than \ce{Cl} as a DMG.
+            \end{itemize}
+            \item $\beta$-DMGs direct $\gamma$ (almost all) or $\alpha$ (\ce{-OEt}).
+            \item $\gamma$-DMGs direct $\beta$.
+            \item $\alpha$-DMGs direct $\beta$.
+            \item Remember to do these reactions cold, in ethereal solvent (\ce{Et2O} or THF), and maybe with an additive (e.g., TMEDA).
+            \item Lithium/halogen exchange.
+        \end{itemize}
+        \item Lateral deprotonation.
+        \begin{itemize}
+            \item $\pKa$'s:
+            \begin{itemize}
+                \item $\gamma$: 26.
+                \item $\alpha$: 29.5.
+                \item $\beta$: 33.5.
+            \end{itemize}
+            \item Thermodynamic conditions: $\gamma>\alpha>\beta$-positions.
+            \item Kinetic conditions (e.g., with \ce{{}^{\emph{n}}BuLi}): $\alpha>\gamma>\beta$-positions.
+            \item Connection to decarboxylation at lateral positions.
+        \end{itemize}
+        \item S\textsubscript{N}Ar is more probable than ketone addition.
+        \begin{itemize}
+            \item For example, aqueous ammonia will do S\textsubscript{N}Ar on pyridine before it adds to a bonded ketone.
+        \end{itemize}
+        \item Hydrogenolysis of aryl chlorides.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=(-Cl)-=)}
+                \arrow{->[\ce{H2}][\ce{Pd/C}]}
+                \chemfig{*6(-N=-=-=)}
+            \schemestop
+        \end{center}
+        \item Aryl chloride to methyl group.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*6(-N=(-Cl)-=-=)}
+                \arrow{->[1. \ce{CH2(CO2Me)2}, base][2. \ce{HO-}, $\Delta$\hspace{5.4em}\ ]}[,2.7]
+                \chemfig[fixed length=false]{*6(-N=(-Me)-=-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item See Figure \ref{fig:PyLatCO2}.
+        \end{itemize}
+        \item \textbf{Chichibabin} (reaction).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=-=)}
+                \arrow{->[\ce{NaNH2}][\SI{160}{\celsius}, Tol]}[,1.6]
+                \chemfig{*6(-N=(-NH_2)-=-=)}
+            \schemestop
+        \end{center}
+        \item 2-addition.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=-=)}
+                \arrow{->[\tikz{\node[align=left]{1. \ce{R$'$COCl}\\2. \ce{RMgX}\\3. [O]}}]}[,1.4]
+                \chemfig[fixed length=false]{*6(-N=(-R)-=-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item The Grignard must be aryl, vinyl, or alkynyl.
+            \item It's not clear what the final step oxidant would be, but perhaps DDQ??
+        \end{itemize}
+        \item \emph{N}-oxide formation and removal.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=-=)}
+                \arrow{<=>[\ce{RCO3H}][\ce{PPh3}]}[,1.2]
+                \chemfig[fixed length=false]{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-\charge{45=$\ominus$}{O})=-=-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Oxidants include \emph{m}CPBA and \ce{H2O2}.
+        \end{itemize}
+        \item \emph{N}-oxide nitration.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-\charge{45=$\ominus$}{O})=-=-=)}
+                \arrow{->[\ce{HNO3}][\ce{H2SO4}]}[,1.2]
+                \chemfig[fixed length=false]{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-\charge{45=$\ominus$}{O})=-=(-NO_2)-=)}
+            \schemestop
+        \end{center}
+        \item \emph{N}-oxide bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-\charge{45=$\ominus$}{O})=-=-=)}
+                \arrow{->[\ce{Br2}][\ce{H2SO4/SO3}]}[,1.7]
+                \chemfig[fixed length=false]{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-\charge{45=$\ominus$}{O})=-(-Br)=-=)}
+            \schemestop
+        \end{center}
+        \item \emph{N}-oxide chlorination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-\charge{45=$\ominus$}{O})=-=-=)}
+                \arrow{->[\ce{POCl3}]}[,1.2]
+                \chemfig[fixed length=false]{*6(-N=(-Cl)-=-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Zincke} (reaction).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=-=)}
+                \arrow{->[\scriptsize\chemfig[atom sep=1.4em]{*6(-(-NO_2)=-(-NO_2)=(-Cl)-=)}]}[,1.6]
+                \chemname{
+                    \chemfig{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-*6(-=-(-NO_2)=-(-NO_2)=))(-[:-10,0.6,,,opacity=0]\charge{45=$\ominus$}{Cl})=-=-=)}
+                }{Zincke's salt\hspace{2em}\ }
+                \arrow{->[\ce{NH2R}]}[,1.2]
+                \chemfig{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-R)(-[:-10,0.6,,,opacity=0]\charge{45=$\ominus$}{Cl})=-=-=)}
+                \+{0.7em,,0.6em}
+                \chemfig{*6(-(-NO_2)=-(-NO_2)=(-NH_2)-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Zincke} (aldehyde formation).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=-=)}
+                \arrow{->[\scriptsize\chemfig[atom sep=1.4em]{*6(-(-NO_2)=-(-NO_2)=(-Cl)-=)}]}[,1.6]
+                \chemfig{*6(-\charge{[extra sep=5pt]90=$\oplus$}{N}(-*6(-=-(-NO_2)=-(-NO_2)=))(-[:-10,0.6,,,opacity=0]\charge{45=$\ominus$}{Cl})=-=-=)}
+                \arrow{->[\ce{NHRR$'$}]}[,1.2]
+                \chemfig{RR'N-[:30]=^[:-30]-[:30]=^[:-30]-[:30](=[2]O)-[:-30]H}
+                \+{,,0.7em}
+                \chemfig{*6(-(-NO_2)=-(-NO_2)=(-NH_2)-=)}
+            \schemestop
+        \end{center}
+        \item Milder, Zincke-inspired \emph{meta}-halogenation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=-=)}
+                \arrow{->[\tikz{\node[align=left]{1. \ce{Tf2O}, \ce{HNBn2}\\2. \ce{NBS}\\3. \ce{NH4OAc}}}]}[,2]
+                \chemfig{*6(-N=-=-(-Br)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Also works with NIS.
+            \item Works with substituted pyridines, too.
+        \end{itemize}
+        \item \emph{meta}-halogenation via dearomatization.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-=-=)}
+                \arrow{->[1. \scriptsize\chemfig[atom sep=1.4em]{MeO_2C-~-CO_2Me}, \chemfig[atom sep=1.4em]{-[:30](=[2]O)-[:-30]CO_2Me}][\tikz{\node[align=left]{2. NCS\\3. HCl}}\hspace{4.2cm}\ ]}[,4.1]
+                \chemfig{*6(-N=-=-(-Cl)=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Pyridine synthesis.
+    \begin{itemize}
+        \item Industrial pyridine synthesis.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{-[:30](=[2]O)-[:-30]H}
+                \arrow{0}[,0.1]\+{,,1.55em}
+                \chemfig[fixed length=false]{H-[:30](=[2]O)-[:-30]H}
+                \arrow{0}[,0.1]\+
+                \chemfig{NH_3}
+                \arrow{->[vapor phase][Si/Al cat]}[,1.5]
+                \chemfig{*6(-N=-=-=)}
+            \schemestop
+        \end{center}
+        \item 1,5-dicarbonyl pyridine synthesis.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R-[:30](=[2]O)-[:-30]-[:30]-[:-30]-[:30](=[2]O)-[:-30]R}
+                \arrow{->[1. \ce{NH2OH}][2. \ce{HNO3}\hspace{0.7em}\ ]}[,1.4]
+                \chemfig[fixed length=false]{*6((-R)-N=(-R)-=-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Hantzsch} (pyridine synthesis).
+        \begin{center}
+            \begin{tikzpicture}
+                \footnotesize
+                \setchemfig{fixed length=false}
+                \node at (180:1.7) {\chemfig{Me-[:30](=[:-30]O)-[2]-[:150]EtO_2C}};
+                \node at (0:1.7) {\chemfig{Me-[:150](=[:-150]O)-[2]-[:30]CO_2Et}};
+                \node at (-90:0.9) {\chemfig{NH_3}};
+                \node at (90:1.1) {\chemfig{R-[6](=[:-150]O)-[:-30]H}};
+                \node at (6,0) {
+                    \schemestart
+                        \arrow{->[1. $\Delta$, EtOH][2. \ce{HNO3}\hspace{1.2em}\ ]}[,1.6]
+                        \chemfig{*6((-Me)-N(-[,,,,opacity=0])=(-Me)-(-CO_2Et)=(-R)-(-EtO_2C)=)}
+                    \schemestop
+                };
+            \end{tikzpicture}
+        \end{center}
+        \begin{itemize}
+            \item Mechanism is classic condensation reactions.
+            \item Asymmetric variant: Condense aldehyde and 1,3-dicarbonyl first, then condense with a \textbf{vinyligous urethane}. No last-step oxidation needed.
+        \end{itemize}
+        \item \textbf{Kr\"{o}hnke} (pyridine synthesis).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R-[:30](=[:-30]O)-[2]Me}
+                \arrow{->[\ce{I2}][Py]}
+                \chemfig{R-[:30](=[:-30]O)-[2]-[:150]\charge{[extra sep=5pt]-90=$\oplus$}{N}*6(=-=-=-)}
+                \arrow{->[\scriptsize\chemfig[atom sep=1.4em]{R'-[6]=_[:-30]-[6](=[:-150]O)-[:-30]R''}][\ce{AcOH}, \ce{NH4OAc}]}[,2]
+                \chemfig{*6((-R)-N=(-R'')-=(-R')-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item If \ce{R} is enolizable (and not methyl), you will get regioisomers.
+            \item Can also start directly with an $\alpha$-bromocarbonyl compound.
+        \end{itemize}
+        \item $[2+2+2]$ pyridine syntheses: Cool, but limited synthetic utility.
+    \end{itemize}
+    \item Some more important $\pKa$'s.
+    \begin{itemize}
+        \item \ce{{}^{\emph{n}}BuLi}: 50.
+        \item LDA: 36.
+        \item \ce{LiNEt2}: 31.7.
+    \end{itemize}
+    \item Pyridone.
+    \begin{itemize}
+        \item Chlorination (see Figure \ref{fig:pyridoneCl}).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-\chembelow{N}{H}(-[6,0.4,,,opacity=0])-(=O)-=-=)}
+                \arrow{->[\ce{POCl3}][base]}[,1.2]
+                \chemfig{*6(-N(-[6,0.4,,,opacity=0])=(-Cl)-=-=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Cross-coupling.
+    \begin{itemize}
+        \item Know generic mechanism.
+        \begin{itemize}
+            \item Transmetallation typically occurs through $\sigma$-bond metathesis.
+        \end{itemize}
+        \item \textbf{Kumada} (coupling).
+        \begin{equation*}
+            \ce{ArX + RMgX ->[L_nPd^0] Ar-R}
+        \end{equation*}
+        \item \textbf{Negishi} (coupling).
+        \begin{equation*}
+            \ce{ArX + RZnX ->[L_nPd^0] Ar-R}
+        \end{equation*}
+        \begin{itemize}
+            \item Common solvent: THF.
+            \item Ideal for coupling something to the pyridine $\alpha$-position; 2-pyridylzincs are great.
+        \end{itemize}
+        \item \textbf{Stille} (coupling).
+        \begin{equation*}
+            \ce{ArX + RSnBu3 ->[L_nPd^0] Ar-R}
+        \end{equation*}
+        \item \textbf{Suzuki-Miyaura} (coupling).
+        \begin{equation*}
+            \ce{ArX + RB(OH)2 ->[L_nPd^0] Ar-R}
+        \end{equation*}
+        \begin{itemize}
+            \item Common base: \ce{K2CO3}.
+            \item Common ligands.
+            \begin{itemize}
+                \item SPhos (see Figure \ref{fig:dialkylbiarylb}).
+                \item dppf ($sp^3$-hybridized boronates).
+                \item Heteroaryl couplings: \ce{PCy3} or MIDA boronates.
+            \end{itemize}
+            \item Common solvent: \ce{ACN/H2O}.
+        \end{itemize}
+        \item \textbf{Sonogashira} (coupling).
+        \begin{equation*}
+            \ce{ArX + R-# ->[L_nPd^0, CuX][Et3N] Ar-#-R}
+        \end{equation*}
+        \item \textbf{Hiyama} (coupling).
+        \begin{equation*}
+            \ce{ArX + RSiMe3 ->[L_nPd^0][F-] Ar-R}
+        \end{equation*}
+        \item \textbf{Carbonyl enolate} (coupling).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{ArX}
+                \arrow{0}[,0.1]\+{,,1.3em}
+                \chemfig[fixed length=false]{=[:30](-[2]\charge{45=$\ominus$}{O})-[:-30]Y}
+                \arrow{->[\ce{L_nPd^0}]}
+                \chemfig[fixed length=false]{Ar-[:-30]-[:30](=[2]O)-[:-30]Y}
+            \schemestop
+        \end{center}
+        \item \textbf{Heck} (coupling).
+        \begin{equation*}
+            \ce{ArX + R-= ->[L_nPd^0][Et3N] Ar-=-R}
+        \end{equation*}
+        \item \textbf{Buchwald-Hartwig} (amination).
+        \begin{equation*}
+            \ce{ArX + NHRR$'$ ->[L_nPd^0][base] Ar-NRR$'$}
+        \end{equation*}
+        \item \textbf{Carbonylation}.
+        \begin{align*}
+            \ce{ArX + CO + ROH ->[L_nPd^0] ArCOOR}&&
+            \ce{ArX + CO + NHRR$'$ ->[L_nPd^0] ArCONRR$'$}
+        \end{align*}
+        \begin{itemize}
+            \item Via an acyl palladide (\ce{ArCOPd}) intermediate.
+        \end{itemize}
+        \item \textbf{Ullmann} (coupling).
+        \begin{equation*}
+            \ce{ArX + NHRR$'$ ->[LCuX][base] Ar-NRR$'$}
+        \end{equation*}
+        \item \textbf{Goldberg} (coupling).
+        \begin{equation*}
+            \ce{ArX + RCONH2 ->[LCuX][base] Ar-NHCOR}
+        \end{equation*}
+        \item \textbf{Miyaura} (borylation).
+        \begin{equation*}
+            \ce{ArX + B2pin2 ->[L_nPd^0][base] Ar-Bpin}
+        \end{equation*}
+        \item \textbf{Cyanation}.
+        \begin{equation*}
+            \ce{ArX + CN- ->[L_nPd^0] ArCN}
+        \end{equation*}
+        \item \textbf{\ce{C-O}} (coupling).
+        \begin{equation*}
+            \ce{ArX + ROH ->[L_nPd^0][base] ArOR}
+        \end{equation*}
+        \begin{itemize}
+            \item \ce{R} can be alkyl or aryl.
+        \end{itemize}
+        \item Ligands.
+        \begin{figure}[h!]
+            \centering
+            \footnotesize
+            \begin{subfigure}[b]{0.28\linewidth}
+                \centering
+                \chemfig{*6(-=*6(-(-[:-70])(-[:-110])-*6(-=-=(-PPh_2)-=)-[,,,,opacity=0]-O-)-=(-[,,,2]Ph_2P)-=)}
+                \caption{Xantphos.}
+                \label{fig:dialkylbiaryla}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.25\linewidth}
+                \centering
+                \chemfig{PCy_2-[:150]*6(-=-=-(-*6(=(-MeO)-=-=(-OMe)-))=)}
+                \caption{SPhos.}
+                \label{fig:dialkylbiarylb}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.28\linewidth}
+                \centering
+                \chemfig{PCy_2-[:150]*6(-=-=-(-*6(=(-{}^{\emph{i}}PrO)-=-=(-O^{\emph{i}}Pr)-))=)}
+                \caption{RuPhos.}
+                \label{fig:dialkylbiarylc}
+            \end{subfigure}
+            \caption{Dialkylbiaryl phosphine ligands.}
+            \label{fig:dialkylbiaryl}
+        \end{figure}
+        \begin{itemize}
+            \item \ce{PPh3}.
+            \item \ce{Xantphos} (Buchwald-Hartwig amination).
+            \item \ce{SPhos} (Miyaura borylation and Suzuki-Miyaura borylation).
+            \item \ce{RuPhos} (Negishi coupling).
+        \end{itemize}
+        \item Direct cross-coupling of two (possibly hetero)aryl halides.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{ArBr}
+                \+
+                \chemfig{ArOTf}
+                \arrow{->[\scriptsize\chemfig[atom sep=1.4em]{*6([:30]=N(-[:-40,0.7]Ni?)-(-*6(=N?-=-(-{}^{\emph{t}}Bu)=-))=-(-{}^{\emph{t}}Bu)=-)}][\scriptsize\chemfig[atom sep=1.4em]{*6([:-60]-[,,,2]{Ph_2}P-Pd-PPh_2---)}]}[,2.5]
+                \chemfig{Ar-Ar}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Quinoline reactivity.
+    \begin{itemize}
+        \item \emph{meta}-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]-=-=-*6(-N=-=-=))}
+                \arrow{->[\ce{Br2}][Py / \ce{CCl4}]}[,1.4]
+                \chemfig[fixed length=false]{*6([4]-=-=-*6(-N=-(-Br)=-=))}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Proceeds through alternate mechanism.
+        \end{itemize}
+        \item 2-addition.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]-=-=-*6(-N=-=-=))}
+                \arrow{->[1. \ce{RLi}\hspace{0.4em}\ ][2. \ce{H2O}]}[,1.2]
+                \chemfig[fixed length=false]{*6([4]-=-=-*6(-\chembelow{N}{H}-(-R)-=-=))}
+                \arrow{->[{[O]}]}
+                \chemfig[fixed length=false]{*6([4]-=-=-*6(-N=(-R)-=-=))}
+                \arrow{->[1. \ce{R$'$Li}\hspace{0.2em}\ ][2. \ce{H2O}]}[,1.2]
+                \chemfig[fixed length=false]{*6([4]-=-=-*6(-\chembelow{N}{H}-(-[:-50]R)(-[:-10]R')-=-=))}
+            \schemestop
+        \end{center}
+        \item Hydrogenations.
+        \begin{figure}[H]
+            \centering
+            \footnotesize
+            \begin{subfigure}[b]{0.49\linewidth}
+                \centering
+                \schemestart
+                    \chemfig{*6([4]-=-=-*6(-N=-=-=))}
+                    \arrow{->[\ce{H2 / PtO2}][TFA]}[,1.5]
+                    \chemfig{*6([4]-----*6(-N=-=-=))}
+                \schemestop
+                \caption{Non-heterocyclic part.}
+                \label{fig:QIHydroa}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.49\linewidth}
+                \centering
+                \schemestart
+                    \chemfig{*6([4]-=-=-*6(-N=-=-=))}
+                    \arrow{->[\ce{H2} (\SI{1}{\atmosphere})][RaNi]}[,1.4]
+                    \chemfig{*6([4]-=-=-*6(-\chembelow{N}{H}----)=)}
+                \schemestop
+                \caption{Heterocyclic part.}
+                \label{fig:QIHydrob}
+            \end{subfigure}\\[2em]
+            \begin{subfigure}[b]{0.49\linewidth}
+                \centering
+                \schemestart
+                    \chemfig{*6([4]-=-=-*6(-N=-=-=))}
+                    \arrow{->[\ce{H2} (\SI{70}{\atmosphere})][RaNi]}[,1.4]
+                    \chemfig{*6([4](<[2]H)-----*6(-\chembelow{N}{H}-----)(<[6]H))}
+                \schemestop
+                \caption{Total.}
+                \label{fig:QIHydroc}
+            \end{subfigure}
+            \caption{Quinoline hydrogenations.}
+            \label{fig:QIHydro}
+        \end{figure}
+        \begin{itemize}
+            \item \emph{cis}-decalin mostly formed in complete hydrogenation; some \emph{trans}-though.
+        \end{itemize}
+    \end{itemize}
+    \item Quinoline synthesis.
+    \begin{itemize}
+        \item \textbf{Meth-Cohn} (quinoline synthesis): 3-substituted and 2-substitutable quinolines.
+        \begin{center}
+            \footnotesize
+            \setchemfig{autoreset cntcycle=true}
+            \chemfig{}
+            \setchemfig{autoreset cntcycle=false}
+            \schemestart
+                \chemfig{*6(-=*6(-\chembelow{N}{H}-(=O)-(-R'))-=-=)}
+                \arrow{->[\ce{DMF*POCl3}][$\Delta$]}[,1.7]
+                \arrow{0}[,0.3]
+                \chemfig{*6([4]-=-=-*6(-N=(-Cl)-(-R')=-=))}
+            \schemestop
+            \chemmove{
+                \draw [ovbnd] ([xshift=-1mm]cyclecenter1.center) -- ++(-0.8,0) node[black,fill=white]{R};
+                \draw [ovbnd] ([xshift=-1mm]cyclecenter3.center) -- ++(-0.8,0) node[black,fill=white]{R};
+            }
+            \setchemfig{autoreset cntcycle=true}
+            \chemfig{}
+            \vspace{0.5em}
+        \end{center}
+        \begin{itemize}
+            \item The starting material could come from the (possibly substituted) aniline and acid chloride (plus \ce{NEt3}).
+            \item Mechanism: Amide $\to$ chloroimine $\to$ enamine $\to$ attack on a Vilsmeier reagent $\to$ Friedel-Crafts.
+        \end{itemize}
+        \item \textbf{Skraup} (quinoline synthesis): No substitution, mix of (di-)2- and 4-substitution.
+        \begin{figure}[h!]
+            \centering
+            \footnotesize
+            \setchemfig{autoreset cntcycle=true}
+            \chemfig{}
+            \setchemfig{autoreset cntcycle=false}
+            \chemnameinit{}
+            \begin{subfigure}[b]{\linewidth}
+                \centering
+                \schemestart
+                    \chemfig[fixed length=false]{*6(-=(-NH_2)-=-=)}
+                    \arrow{0}[8,0.1]\+{,,2em}
+                    \chemfig{R^2-[:30](-[:-30]R^3)=^[2]-[:150](=[:-150]O)-[2]R^4}
+                    \arrow{->[acid]}\arrow{0}[,0.3]
+                    \chemfig{*6([4]-=-=-*6(-\chembelow{N}{H}-(-[:-10]R^2)(-[:-50]R^3)-=(-R^4)-=))}
+                \schemestop
+                \chemmove{
+                    \draw [ovbnd] ([xshift=-1mm]cyclecenter1.center) -- ++(-0.8,0) node[black,fill=white]{\ce{R^1}};
+                    \draw [ovbnd] ([xshift=-1mm]cyclecenter2.center) -- ++(-0.8,0) node[black,fill=white]{\ce{R^1}};
+                }
+                \caption{Pyridine ring substiutions.}
+                \label{fig:QIskraupa}
+            \end{subfigure}\\[2em]
+            \begin{subfigure}[b]{\linewidth}
+                \centering
+                \schemestart
+                    \chemfig[fixed length=false]{*6(-=(-NH_2)-=-=)}
+                    \+
+                    \chemname{
+                        \chemfig{(-[:-30]OH)-[2](-[:30]OH)-[:150]-[:-150]HO}
+                    }{glycerol (dropwise)}
+                    \arrow{->[\ce{FeSO4*7H2O}, \ce{MeSO3H}, $\Delta$][\scriptsize\chemfig[atom sep=1.4em]{*6(-(-NO_2)=-(-SO_3Na)=-=)}]}[,2.9]
+                    \arrow{0}[,0.3]
+                    \chemfig{*6([4]-=-=-*6(-N=-=-=))}
+                \schemestop
+                \chemmove{
+                    \draw [ovbnd] ([xshift=-1mm]cyclecenter4.center) -- ++(-0.8,0) node[black,fill=white]{R};
+                    \draw [ovbnd] ([xshift=-1mm]cyclecenter6.center) -- ++(-0.8,0) node[black,fill=white]{R};
+                }
+                \caption{No pyridine ring substitutions.}
+                \label{fig:QIskraupb}
+            \end{subfigure}
+            \setchemfig{autoreset cntcycle=true}
+            \chemfig{}
+            \caption{Skraup quinoline synthesis.}
+            \label{fig:QIskraup}
+        \end{figure}
+        \begin{itemize}
+            \item Figure \ref{fig:QIskraupa}.
+            \begin{itemize}
+                \item If at least one of $\ce{R^2},\ce{R^3}=\ce{H}$, then $\text{acid}=\ce{H2SO4}$ and the system is oxidized to a quinoline.
+                \item If both $\ce{R^2},\ce{R^3}\neq\ce{H}$, then $\text{acid}=\ce{pTsOH}$ and the system is \emph{not} oxidized.
+            \end{itemize}
+            \item Figure \ref{fig:QIskraupb}.
+            \begin{itemize}
+                \item Acrolein generated \emph{in situ} from glycerol.
+            \end{itemize}
+            \item Mechanism: Michael addition, Friedel-Crafts, dehydration, oxidation.
+        \end{itemize}
+        \item \textbf{Friedlander} (quinoline synthesis): 2-, 3-, and 4-substitution (or mix and match).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-=(-NH_2)-(-(=[:-30]O)-[2]R)=-=)}
+                \+
+                \chemfig{(=[:-150]O)(-[:-30]-[:30]R')-[2]-[:30]R''}
+                \arrow{->[\ce{KOH}][\ce{EtOH}, $\Delta$]}[,1.3]
+                \chemfig{*6([4]-=-=-*6(-N=(--[:30]R')-(-R'')=(-R)-=))}
+                \+
+                \chemfig{*6([4]-=-=-*6(-N=(--[:30]R'')-(-R')=(-R)-=))}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Mechanism: Imine condensation, followed by enamine attack on the aldehyde/ketone.
+            \item Regioisomer problems: Just reject the unwanted side product.
+        \end{itemize}
+    \end{itemize}
+    \item Quinolone synthesis.
+    \begin{itemize}
+        \item \textbf{Conrad-Limpach-Knorr} (quinolone synthesis).
+        \begin{figure}[h!]
+            \centering
+            \footnotesize
+            \begin{subfigure}[b]{\linewidth}
+                \centering
+                \schemestart
+                    \chemfig[fixed length=false]{*6(-=(-NH_2)-=-=)}
+                    \+
+                    \chemfig{(-[:-150]Me)(=[2]O)-[:-30]-[:30](=[2]O)-[:-30]OEt}
+                    \arrow{->[\ce{H2SO4}]}[,1.1]
+                    \chemfig{*6([4]-=-=-*6(-\chembelow{N}{H}-(=O)-=(-Me)-=))}
+                \schemestop
+                \caption{2-quinolones.}
+                \label{fig:QIclka}
+            \end{subfigure}\\[2em]
+            \begin{subfigure}[b]{\linewidth}
+                \centering
+                \schemestart
+                    \chemfig[fixed length=false]{*6(-=(-NH_2)-=-=)}
+                    \+
+                    \chemfig{(-[:-150]Me)(=[2]O)-[:-30]-[:30](=[2]O)-[:-30]OEt}
+                    \arrow{->[$\Delta$]}
+                    \chemfig{*6([4]-=-=-*6(-\chembelow{N}{H}-(-Me)=-(=O)-=))}
+                \schemestop
+                \caption{4-quinolones.}
+                \label{fig:QIclkb}
+            \end{subfigure}
+            \caption{Conrad-Limpach-Knorr quinolone synthesis.}
+            \label{fig:QIclk}
+        \end{figure}
+        \begin{itemize}
+            \item Presumably also works with substituted variants.
+            \item Acid protonates the more electron-rich ester; heat provides energy for attack at the more electrophilic ketone.
+        \end{itemize}
+    \end{itemize}
+    \item Isoquinoline reactivity.
+    \begin{itemize}
+        \item 5-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]=-=-=*6(-=N-=--))}
+                \arrow{->[\ce{Br2}][\ce{AlCl3}]}
+                \chemfig{*6([4]=(-Br)-=-=*6(-=N-=--))}
+            \schemestop
+        \end{center}
+        \item 5- and 8-nitration.
+        \begin{center}
+            \footnotesize
+            \chemnameinit{\chemfig{*6([4]=-=-(-NO_2)=*6(-=N-=--))}}
+            \schemestart
+                \chemfig{*6([4]=-=-=*6(-=N-=--))}
+                \arrow{->[\ce{HNO3}][\ce{H2SO4}]}
+                \chemname{
+                    \chemfig{*6([4]=(-NO_2)-=-=*6(-=N-=--))}
+                }{90\%}
+                \+{,,-1.4em}
+                \chemname{
+                    \chemfig{*6([4]=-=-(-NO_2)=*6(-=N-=--))}
+                }{10\%}
+            \schemestop
+            \chemnameinit{}
+        \end{center}
+        \item Chichibabin reaction.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]=-=-=*6(-=N-=--))}
+                \arrow{->[\ce{NaNH2}]}[,1.2]
+                \chemfig{*6([4]=-=-=*6(-(-NH_2)=N-=--))}
+            \schemestop
+        \end{center}
+        \item 1-addition.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]=-=-=*6(-=N-=--))}
+                \arrow{->[\tikz{\node[align=left]{1. \ce{RLi}\\2. \ce{H2O}\\3. [O]}}]}[,1.2]
+                \chemfig{*6([4]=-=-=*6(-(-R)=N-=--))}
+            \schemestop
+        \end{center}
+        \item 1-selective S\textsubscript{N}Ar.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]=-=-=*6(-(-Cl)=N-(-Cl)=--))}
+                \arrow{->[\ce{NaOMe}][\ce{MeOH}]}[,1.2]
+                \chemfig{*6([4]=-=-=*6(-(-OMe)=N-(-Cl)=--))}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Isoquinoline synthesis.
+    \begin{itemize}
+        \item \textbf{Pomeranz-Fritsch} (isoquinoline synthesis): Anything can be substituted.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-=(-(=[:30]O)-[6]H)-=-=)}
+                \+
+                \chemfig[fixed length=false]{NH_2-[2]-[:150](-[2,,,2]MeO)-[:-150]MeO}
+                \arrow{->[\ce{H2SO4}]}[,1.2]
+                \chemfig{*6([4]=-=-=*6(-=N-=--))}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Can use methyl or ethyl acetal.
+        \end{itemize}
+        \item \textbf{Bischler-Napieralski} (isoquinoline synthesis): Enables formation of same derivatives.
+        \item \textbf{Pictet-Gams} (isoquinoline synthesis): Enables formation of same derivatives.
+    \end{itemize}
+    \item \textbf{Pictet-Spengler} (reaction): A $\beta$-arylethylamine undergoes condensation with an aldehyde or ketone followed by ring closure.
+    \begin{center}
+        \footnotesize
+        \setchemfig{autoreset cntcycle=true}
+        \chemfig{}
+        \setchemfig{autoreset cntcycle=false}
+        \schemestart
+            \chemfig{*6(-=-(--[:-30]-[6]NH_2)=-=)}
+            \+
+            \chemfig[fixed length=false]{H-[:-30](=[:30]O)-[6]R'}
+            \arrow{->[\ce{H+}][$\Delta$]}\arrow{0}[,0.3]
+            \chemfig{*6([4]=-=-=*6(-(-R')-NH----))}
+        \schemestop
+        \chemmove{
+            \draw [ovbnd] ([xshift=-1mm]cyclecenter1.center) -- ++(-0.8,0) node[black,fill=white]{R};
+            \draw [ovbnd] ([xshift=-1mm]cyclecenter2.center) -- ++(-0.8,0) node[black,fill=white]{R};
+        }
+        \setchemfig{autoreset cntcycle=true}
+        \chemfig{}
+    \end{center}
+    \begin{itemize}
+        \item Mechanism can be Friedel-Crafts or involve shifts (depending on the most nucleophilic position).
+    \end{itemize}
+    \item Pyrimidine synthesis.
+    \begin{itemize}
+        \item \textbf{Grimmaux} (pyrimidine synthesis): 3 carbonyls.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{H_2N-[:30](=[2]O)-[:-30]NH_2}
+                \+{,,1.8em}
+                \chemfig{HO-[:30](=[2]O)-[:-30]-[:30](=[2]O)-[:-30]OH}
+                \arrow{->[\ce{POCl3}]}
+                \chemfig{*6((=O)--(=O)-NH-(=O)-HN-[,,2])}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Can also use \ce{NaOR/ROH} and di-R malonate esters.
+        \end{itemize}
+        % \item \textbf{Biginelli} (pyrimidine synthesis): 1 carbonyl.
+        % \begin{center}
+        %     \footnotesize
+        %     \begin{tikzpicture}
+        %         \node at (90:1.5) {\chemfig{RO-[:30](=[2]O)-[:-30]-[:30](=[:-30]O)-[2]R'}};
+        %         \node at (0,0) {\chemfig{R''-[:30](=[2]O)-[:-30]H}};
+        %         \node at (0:2) {\chemfig{\chembelow{N}{{}_{\color{white}2}H_2}-[:30](=[:-30]O)-[2]NH_2}};
+        %         \node at (5,0.5) {
+        %             \schemestart
+        %                 \arrow{->[\ce{BF3}]}
+        %                 \chemfig{*6((-R'')-\chembelow{N}{H}-(=O)-NH-(-R')-(-(=[2]O)-[:-150]RO)=)}
+        %             \schemestop
+        %         };
+        %     \end{tikzpicture}
+        % \end{center}
+        % \begin{itemize}
+        %     \item Mechanism: Knoevenagel condensation, double aza-conjugate addition.
+        % \end{itemize}
+        \item \textbf{Ziegenbein-Franke} (pyrimidine synthesis): 5- and 6-substituted pyrimidines.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^1-[:30](=[:-30]O)-[2]-[:150]R^2}
+                \arrow{->[1. \ce{DMF*POCl3}\hspace{5.1em}\ ][2. \ce{CHONH2}, \ce{NH4HCO2}, $\Delta$]}[,3]
+                \chemfig{*6((-R^1)-N=-N=-(-R^2)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Will have regioselectivity issues if $\ce{R^1}\neq\ce{R^2}$.
+        \end{itemize}
+        \item $[3+3]$ (pyrimidine syntheses).
+        \begin{itemize}
+            \item Bis-nucleophile: Pinner product, or other group in the middle besides alkyl.
+            \item Bis-electrophile.
+            \begin{itemize}
+                \item 4(5)6-substitution: $\beta$-diketone.
+                \item (5)6-substitution, 4-one: $\beta$-ketoester.
+                \item 4(5)-substitution: $\alpha,\beta$-unsaturated ketone with $\beta$-leaving group.
+                \item 6-substitution, 4-one: Propynyl ester.
+                \item (5)-substitution: Vinamidium salt.
+                \item (5)6-substitution, 4-amine: $\beta$-ketonitrile.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Pinner} (reaction).
+    \begin{center}
+        \footnotesize
+        \schemestart
+            \chemfig{R-C~N}
+            \arrow(--a.169){->[\ce{R$'$OH}][\ce{HCl}]}
+            \chemname{
+                \chemfig{R-(=[:60]\charge{[extra sep=5pt]90=$\oplus$}{N}H_2-[:-170,0.7,,,opacity=0]\charge{45=$\ominus$}{Cl})-[:-60]OR'}
+            }{Pinner salt}
+            \arrow{->[*{0}\ce{H2O}]}[22]
+            \chemfig{R-(=[:60]O)-[:-60]OH}
+            \arrow(@a--){->[*{0}\ce{NH3}]}[-22]
+            \chemfig{R-(=[:60]\charge{[extra sep=5pt]90=$\oplus$}{N}H_2-[:-170,0.7,,,opacity=0]\charge{45=$\ominus$}{Cl})-[:-60]NH_2}
+        \schemestop
+    \end{center}
+    \begin{itemize}
+        \item Forms \textbf{Pinner salts}, which are readily derivatized.
+    \end{itemize}
+    \item \textbf{Turbogrignard}: The compound \ce{{}^{\emph{i}}PrMgCl}, which is useful for converting \ce{R-X} to Grignards.
+    \item \ce{KOH + H2O/THF} can sometimes be used to convert chloro-heterocycles to carbonyl groups.
+    \item Boc protection/deprotection.
+    \begin{equation*}
+        \ce{R2NH ->[Boc2O][Et3N, DMAP] R2N-Boc ->[TFA] R2NH}
+    \end{equation*}
+    \item Pyrrole reactivity.
+    \begin{itemize}
+        \item 2- (and partial 3-) nitration.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+                \arrow{->[\ce{AcONO2}]}[,1.3]
+                \chemname[1.5em]{
+                    \chemfig{*5([:-18]-\chembelow{N}{H}-(-NO_2)=-=)}
+                }{80\%}
+                \+
+                \chemname[1.5em]{
+                    \chemfig{*5([:-18]-\chembelow{N}{H}-=(-NO_2)-=)}
+                }{20\%}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item \ce{AcONO2} is a source of \ce{NO2+}; made from \ce{HNO3 + Ac2O}.
+        \end{itemize}
+        \item Perbromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+                \arrow{->[\ce{Br2}][\ce{EtOH}, \SI{0}{\celsius}]}[,1.6]
+                \chemfig[fixed length=false]{*5([:-18](-Br)-\chembelow{N}{H}-(-Br)=(-Br)-(-Br)=)}
+            \schemestop
+        \end{center}
+        \item 2,5-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*5([:-18]-N(-(=[:-30]O)-[:-150]O-(-[:-30])(-[:-150])-)-=-=)}
+                \arrow{->[NBS][THF, $-\SI{78}{\celsius}$]}[,1.7]
+                \chemfig[fixed length=false]{*5([:-18](-Br)-(-(=[:-30]O)-[:-150]O-(-[:-30])(-[:-150])-)-(-Br)=-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Boc-protection.
+        \end{itemize}
+        \item 3-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*5([:-18]-N(-Si(-[:-30](-[::60,0.8])(-[::-60]))(-[6](-[::60,0.8])(-[::-60,0.8]))(-[:-150](-[::60,0.8])(-[::-60,0.8])))-=-=)}
+                \arrow{->[2 eq. NBS][THF, $-\SI{78}{\celsius}$]}[,1.7]
+                \chemfig[fixed length=false]{*5([:-18]-N(-Si(-[:-30](-[::60,0.8])(-[::-60]))(-[6](-[::60,0.8])(-[::-60,0.8]))(-[:-150](-[::60,0.8])(-[::-60,0.8])))-=(-Br)-(-Br)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item TIPS-protection.
+        \end{itemize}
+        \item 3,4-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*5([:-18]-N(-{TIPS})-=-=)}
+                \arrow{->[1 eq. NBS][THF, $-\SI{78}{\celsius}$]}[,1.7]
+                \chemfig[fixed length=false]{*5([:-18]-N(-{TIPS})-=(-Br)-=)}
+            \schemestop
+        \end{center}
+        \item 2-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+                \arrow{->[DBDMH][THF, $-\SI{78}{\celsius}$]}[,1.7]
+                \chemfig{*5([:-18]-\chembelow{N}{H}-(-Br)=-=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \begin{itemize}
+            \item Dibromodimethylhydantoin is an alternative \ce{Br+} equivalent.
+        \end{itemize}
+        \item Vilsmeier formylation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+                \arrow{->[1. \ce{DMF*POCl3}][2. \ce{Na2CO3_{(aq)}}\hspace{0.5em}\ ]}[,2]
+                \chemfig[fixed length=false]{*5([:-18]-\chembelow{N}{H}-(-(=[::60]O)-[::-60]H)=-=)}
+            \schemestop
+        \end{center}
+        \item Can get reactivity at \ce{N} by deprotonating with \ce{NaH}.
+        \item Diels-Alder reactivity: Possible with Boc (EWG) protection and \emph{very} activated dienophiles.
+        \item Decarboxylation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*5([:-18]-\chembelow{N}{H}-(-CO_2H)=-=)}
+                \arrow{->[\ce{R2NH}][$\Delta$]}
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \begin{itemize}
+            \item Carboxylic acids can be used as removable C2-blocking groups.
+        \end{itemize}
+        \item Cross-coupling.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{TIPS}-=(-Br)-=)}
+                \arrow{->[1. \ce{ArM}, \ce{L_nPd^0}][2. TBAF, THF]}[,2]
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=(-Ar)-=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \begin{itemize}
+            \item Big, bulky protecting group needed (TIPS best).
+        \end{itemize}
+        \item 2,5-dimethylpyrrole protection/deprotection.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R-NH_2}
+                \arrow{->[\scriptsize\chemfig[atom sep=1.4em]{-[:30](=[2]O)-[:-30]-[:30]-[:-30](=[6]O)-[:30]}][\ce{H+}, $\Delta$]}[,1.7]
+                \chemfig{R-N*5(-(-)=-=(-)-)}
+                \arrow{->[\ce{NH2OH*HCl}]}[,1.7]
+                \chemfig{R-NH_2}
+            \schemestop
+        \end{center}
+        \item 2-nitrilation (with CSI).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+                \arrow{->[CSI]}
+                \chemfig{*5([:-18]-\chembelow{N}{H}-(-CN)=-=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \begin{itemize}
+            \item DMF-induced pericyclic reactions can help in workup.
+        \end{itemize}
+        \item 2-nitrilation (with Vilsmeier-type chemistry).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+                \arrow{->[1. \ce{{\color{rex}DMF}*POCl3}][2. \ce{{\color{grx}N}H2OH}\hspace{2.4em}\ ]}[,2]
+                \chemfig{*5([:-18]-\chembelow{N}{H}-(-{\color{rex}C}{\color{grx}N})=-=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+    \end{itemize}
+    \item Pyrrole synthesis.
+    \begin{itemize}
+        \item Industrial pyrrole synthesis.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-O-=-=)}
+                \arrow{->[\ce{NH3}][\ce{Al2O3}]}
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=-=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \item \textbf{Paal-Knorr} (pyrrole synthesis): (1)(2)(5)-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^1-(=[:-60]O)-[:60]--[:-60](=[:-120]O)-R^2}
+                \+
+                \chemfig{R^3-NH_2}
+                \arrow{->[\ce{H+}][$\Delta$]}
+                \chemfig[fixed length=false]{*5([:-18](-R^1)-N(-R^3)-(-R^2)=-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item To avoid \ce{R^3}, use \ce{NH3}.
+            \item To avoid \ce{R^1}, \ce{R^2}, or both, use the corresponding acetal(s). 2,5-dimethoxyTHF may be useful.
+        \end{itemize}
+        \item \textbf{Knorr} (pyrrole synthesis): (2)3-substitution; can keep an ester or carboxylic acid at the 4- and/or 5-position.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{NH_2-[:120](-[4]R^1)-[:60](=O)-[:120]R^2}
+                \+{,,3em}
+                \chemfig{O=[:60](-CO_2Me)-[:120]-[:60]CO_2Et}
+                \arrow{->[\ce{KOH}][\ce{H2O}, rt]}[,1.1]
+                \chemfig[fixed length=false]{*5([:-18](-R^1)-\chembelow{N}{H}-(-CO_2Me)=(-CO_2Et)-(-R^2)=)}
+                \arrow{->[*{0}{\ce{H2O}, $\Delta$}][*{0}\ce{KOH}]}[-90,1.1]
+                \chemfig[fixed length=false]{*5([:-18](-R^1)-\chembelow{N}{H}-=(-CO_2H)-(-R^2)=)}
+                \arrow{->[$\Delta$]}[180]
+                \chemfig[fixed length=false]{*5([:-18](-R^1)-\chembelow{N}{H}-=-(-R^2)=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Hantzsch} (pyrrole synthesis): 235-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^1-[4](=[:-120]O)-[:120]-[:60]EWG}
+                \arrow{->[1. \ce{NaH}, THF, rt][2. \scriptsize\chemfig[atom sep=1.4em]{R^2-(=[:-60]O)-[:60]-X}\hspace{1.2em}\ ]}[,2]
+                \chemfig{R^2-(=[:-60]O)-[:60]-(-[:60]EWG)-[:-60](=[:-120]O)-R^1}
+                \arrow{->[\ce{NH4OAc}][\ce{EtOH}, rt]}[,1.3]
+                \chemfig{*5([:-18](-R^2)-\chembelow{N}{H}-(-R^1)=(-EWG)-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{van Leusen} (pyrrole synthesis): 34-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R-[:-60]=^-[:60](=[:120]O)-R'}
+                \arrow{->[TosMIC, \ce{NaH}][\ce{Et2O}, rt]}[,1.8]
+                \chemfig{*5([:-18]-\chembelow{N}{H}-=(-(=[::60]O)-[::-60]R')-(-R)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item $\alpha,\beta$-unsaturated SM can come from HWE!
+        \end{itemize}
+    \end{itemize}
+    \item \ce{POBr3} does the same thing as \ce{POCl3} (e.g., can brominate something).
+    \item Imidazole reactivity.
+    \begin{itemize}
+        \item Alkylation under neutral conditions: \ce{MeI} adds to one, both, or neither nitrogen.
+        \item Alkylation under basic conditions (LDA, \ce{NaH}, \ce{NaHMDS}): Deprotonation and alkylation.
+        \item Selective \ce{N^2} alkylation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5(-\chembelow{N}{H}-=N-(-Ph)=)}
+                \arrow{->[\ce{PhCOCl}][\ce{NaOH_{(aq)}}]}[,1.4]
+                \chemfig[fixed length=false]{*5(-N(-(=[::-60]O)-[::60]Ph)-=N-(-Ph)=)}
+                \arrow{->[1. \ce{Et3O*BF4}, DCM, rt][2. \ce{Na2CO3}\hspace{5.5em}\ ]}[,2.6]
+                \chemfig[fixed length=false]{*5(-N=-N(-Et)-(-Ph)=)}
+            \schemestop
+        \end{center}
+        \item 4-nitration.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5(-\chembelow{N}{H}-=N-=)}
+                \arrow{->[\ce{HNO3}][1\% \ce{H2SO4/SO3}]}[,1.9]
+                \chemfig[fixed length=false]{*5(-\chembelow{N}{H}-=N-(-O_2N)=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \item Perbromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5(-\chembelow{N}{H}-=N-=)}
+                \arrow{->[\ce{Br2}][\ce{AcOH}, \ce{NaOAc}, rt]}[,2.1]
+                \chemfig[fixed length=false]{*5((-Br)-\chembelow{N}{H}-(-Br)=N-(-Br)=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \begin{itemize}
+            \item Can also do 2-bromination with just \ce{Br2}??
+        \end{itemize}
+        \item Directed metallation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{*5(-N=-N(-SEM)-=)}
+                \arrow{->[1. \ce{{}^{\emph{n}}BuLi}, THF, $-\SI{78}{\celsius}$][2. \ce{TMSCl}\hspace{6em}\ ]}[,2.7]
+                \chemfig[fixed length=false]{*5(-N=(-TMS)-N(-SEM)-=)}
+                \arrow{->[\tikz{\node[align=left]{1. \ce{{}^{\emph{s}}BuLi}, THF, $-\SI{78}{\celsius}$\\2. \ce{PhS-SPh}\\3. \ce{H3O+}}}]}[,2.7]
+                \chemfig[fixed length=false]{*5(-N=-N(-SEM)-(-PhS)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Protect with SEM (deprotonation, SEM-Cl).
+            \item Direct to C2, which can also be protected/deprotected to direct C4.
+        \end{itemize}
+        \item Lithium/halogen exchange: Consider adding a strong base before \ce{{}^{\emph{n}}BuLi} to ensure ordering.
+        \item \textbf{Minisci} (reaction).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5(-\chembelow{N}{H}-=N-=)}
+                \arrow{->[\ce{R-CO2H}][\ce{AgNO3}, \ce{H2SO4}, \ce{(NH4)2S2O8}, $\Delta$]}[,3.4]
+                \chemfig{*5(-\chembelow{N}{H}-(-R)=N-=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \item Radical addition to electrophilic sites.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5((-(=[::-60]O)-[::60]H)-N=-N*6(----(-Br))-=)}
+                \arrow{->[\ce{AIBN} (cat.), \ce{Bu3SnH}][ACN, $\Delta$]}[,2.4]
+                \chemfig{*5((-(=[::-60]O)-[::60]H)-N=-N*6(-----)-=)}
+            \schemestop
+        \end{center}
+        \item Quaternary imidazolium salts to \emph{N}-heterocyclic carbenes.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5(-\charge{[extra sep=4pt]0=$\oplus$}{N}(-R)(-[:30,0.7,,,opacity=0]\charge{45=$\ominus$}{X})=-N(-R')-=)}
+                \arrow{->[base][-\ce{HX}]}
+                \chemfig{*5(-N(-R)-\charge{0=\:}{}-N(-R')-=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Imidazole synthesis.
+    \begin{itemize}
+        \item \textbf{Debus-Radziszewski} (imidazole synthesis): (2)45-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^2-[:30](=[:-30]O)-[2](=[:30]O)-[:150]R^1}
+                \+{,,2.5em}
+                \chemfig{O=[:60](-[:120]H)-R^3}
+                \arrow{->[\ce{NH3}][\ce{H2O}, $\Delta$]}[,1.2]
+                \chemfig{*5((-R^2)-\chembelow{N}{H}-(-R^3)=N-(-R^1)=)}
+            \schemestop
+        \end{center}
+        \item Pinner-type (imidazole synthesis): (2)4(5)-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[:30](-[:-30]Br)-[2](=[:30]O)-[:150]R^4}
+                \+{,,2.5em}
+                \chemfig{HN=[:60](-[:120]NH_2)-R^2}
+                \arrow{->[base]}
+                \chemfig{*5((-R^5)-\chembelow{N}{H}-(-R^2)=N-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \item \textbf{van Leusen} (imidazole synthesis): (3)4-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^4-[:-30]=_[:30]N-[2]R^3}
+                \arrow{->[TosMIC][base]}[,1.2]
+                \chemfig{*5(-N=-N(-R^3)-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \item Synthesis 4: 2(3)-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{RO-[:30](-[:-30]OR)-[2]-[:30]NH-[2]R^3}
+                \arrow{0}[,0.1]\+
+                \chemfig{N~C-R^2}
+                \arrow
+                \chemfig{*5(-N=(-R^2)-N(-R^3)-=)}
+            \schemestop
+        \end{center}
+        \item Paal-Knorr-type (imidazole synthesis): 24(5)-substitution.
+        \begin{center}
+            \vspace{0.5em}
+            \footnotesize
+            \schemestart
+                \chemfig{R^4-[:-30](-[6](=[:-30]O)-[:-150]R^5)-[:30]\chemabove{N}{H}-[:-30](=[6]O)-[:30]R^2}
+                \arrow{->[\ce{NH3}]}
+                \chemfig{*5((-R^5)-\chembelow{N}{H}-(-R^2)=N-(-R^4)=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Pyrazole reactivity.
+    \begin{itemize}
+        \item Acylation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-N=-=)}
+                \arrow{->[\ce{RCOCl}][\ce{PhH}, rt]}[,1.2]
+                \chemfig[fixed length=false]{*5([:-18]-N(-(=[:-30]O)-[:-150]R)-N=-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Mechanism probably proceeds through reversible acylation at the other nitrogen first.
+        \end{itemize}
+        \item 4-halogenation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-\chembelow{N}{H}-N=-=)}
+                \arrow{->[\ce{X2}]}
+                \chemfig[fixed length=false]{*5([:-18]-\chembelow{N}{H}-N=-(-X)=)}
+            \schemestop
+        \end{center}
+        \item \emph{N}-alkylation varies in neutral vs. basic conditions as in imidazole.
+        \item 5-directed metallation upon \ce{N-H} protection.
+    \end{itemize}
+    \item Pyrazole synthesis.
+    \begin{itemize}
+        \item \textbf{Knorr} (pyrazole synthesis): (2)35-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R-[:30](=[:-30]O)-[2]-[:30](=[:-30]O)-[2]R}
+                \arrow{->[\ce{N2H4}][\ce{H+}, $\Delta$]}
+                \chemfig{*5([:-18](-R)-\chembelow{N}{H}-N=(-R)-=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Regioisomer issues if asymmetric, unless extreme mismatch in electrophilicity/nucleophilicity is induced.
+        \end{itemize}
+        \item Dipolar cycloaddition method: 34-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R-~-R}
+                \arrow{->[\ce{CH2N2}]}[,1.1]
+                \chemfig{*5([:-18]-\chembelow{N}{H}-N=(-R)-(-R)=)}
+            \schemestop
+            \vspace{0.5em}
+        \end{center}
+        \begin{itemize}
+            \item May have regioisomer issues. Can be partially overcome by introducing electronic biases.
+        \end{itemize}
+    \end{itemize}
+    \item Indole reactivity.
+    \begin{itemize}
+        \item \textbf{Mannich} (reaction): Formaldehyde and dialkylamines add at C3.
+        \item C2 lithiation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-=-)-)}
+                \arrow{->[\tikz{\node[align=left]{1. \ce{{}^{\emph{n}}BuLi}, THF, $-\SI{78}{\celsius}$\\2. \ce{CO2}\\3. \ce{{}^{\emph{t}}BuLi}, THF, $-\SI{78}{\celsius}$}}]}[,2.7]
+                \chemfig[fixed length=false]{*6([4]=-=-=*5(-N*5(-(=O)-O(-Li)-Li-)-=-)-)}
+                \arrow{->[\ce{E+};][\ce{H2O}]}
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-(-E)=-)-)}
+            \schemestop
+        \end{center}
+        \item Gramine (from Mannich reaction) can be methylated and leave to allow other nucleophiles to attach to the offshot position.
+        \item 4-lithiation of gramine with TIPS protection.
+    \end{itemize}
+    \item Indole synthesis.
+    \begin{itemize}
+        \item \textbf{Zincke} (indole synthesis): 3-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-(-NH_2)=(-*6(=-N=-=-))-=-=)}
+                \arrow{->[1. \ce{BrCN}][2. \ce{H2O}\hspace{0.5em}\ ]}[,1.3]
+                \chemfig{*6(-=*5(-\chembelow{N}{H}-=(-=_[::-60]-[::60](=[::-60]O)-[::60]H)-)-=-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Bartoli} (indole synthesis): (2)(3)7-substitution, and other on the benzene ring.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-(-R)=(-NO_2)-=-=)}
+                \arrow{->[3 eq. \scriptsize\chemfig[atom sep=1.4em]{R^3-[:-30]=_[:30](-[2]R^2)-[:-30]MgBr}][$-\SI{40}{\celsius}$]}[,2.5]
+                \chemfig[fixed length=false]{*6([4]=-=-(-R)=*5(-\chembelow{N}{H}-(-R^2)=(-R^3)-)-)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item \emph{Requires} bulky 7-group.
+        \end{itemize}
+        \item \textbf{Leimgruber-Batcho} (indole synthesis): (3)-substitution, and other on the benzene ring.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-=(-NO_2)-(--[2]R)=-=)}
+                \arrow{->[1. DMF-DMA][2. \ce{TiCl3_{(aq)}}\hspace{0.9em}\ ]}[,1.8]
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-=(-R)-)-)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Does not need a bulky 7-group.
+        \end{itemize}
+        \item \textbf{Bischler} (indole synthesis): Aniline starting material.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-=(-NH_2)-=-=)}
+                \arrow{->[1. \ce{Et3N}\hspace{3em}\ ][2. TFAA, TFA]}[,1.8]
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-=-)-)}
+            \schemestop
+        \end{center}
+        \item \textbf{Fischer} (indole synthesis).
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6((-EDG)=-(-NHNH_2)=-=-)}
+                \+
+                \chemfig{(=[:-150]O)(-[:-30]Me)-[2]-[:30]R}
+                \arrow{->[\ce{HOAc}][$\Delta$]}
+                \chemfig{*6([4]=-=(-EDG)-=*5(-\chembelow{N}{H}-(-Me)=(-R)-)-)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Regioisomer problems: Enolization both ways, substituents on the ring.
+            \item \emph{meta}-EDG selective for 6-substitution.
+            \item Weak acid selective for thermodynamic enolization; strong acid selective for kinetic enolization.
+        \end{itemize}
+        \item \textbf{Reissert} (indole synthesis): 2-ester-(3)-substitution, and other on the benzene ring.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(=-(-NO_2)=(--[2]R)-=-)}
+                \arrow{->[\ce{(CO2Et)2}][\ce{KOEt}, \ce{EtOH}]}[,1.7]
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-(-CO_2Et)=(-R)-)-)}
+            \schemestop
+        \end{center}
+        \item \textbf{Madelung} (indole synthesis): 2(3)-substitution, and other on the benzene ring.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(=-(-\chembelow{N}{H}-[:30](=[2]O)-[:-30]R^2)=(--[2]R^3)-=-)}
+                \arrow{->[\ce{{}^{\emph{n}}BuLi}][$-\SI{20}{\celsius}$]}[,1.1]
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-(-R^2)=(-R^3)-)-)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Could prepare starting material from Fridel-Crafts, Clemmensen, bromination, Goldberg (or nitration, reduction, acylation).
+        \end{itemize}
+        \item \textbf{Hemetsberger} (indole synthesis): 2-ester-substitution.
+    \end{itemize}
+    \item \emph{para}-sulfonyl protecting group installation and removal.
+    \begin{center}
+        \footnotesize
+        \schemestart
+            \chemfig{EDG-*6(-=-=-=)}
+            \arrow{->[\ce{H2SO4}][\ce{SO3}]}[,1.2]
+            \chemfig{EDG-*6(-=-(-SO_3H)=-=)}
+            \arrow{->[\ce{H+}, $\Delta$][\ce{H2O}]}[,1.1]
+            \chemfig{EDG-*6(-=-=-=)}
+        \schemestop
+    \end{center}
+    \item Indazole reactivity.
+    \begin{itemize}
+        \item \ce{N^1}- and \ce{N^2}-THP protection.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-N=-)-)}
+                \arrow(a--){->[DHP][\ce{pTsOH}]}[,1.1]
+                \chemfig{*6([4]=-=-=*5(-N(-*6(-O-----))-N=-)-)}
+                \arrow(@a--){->[DHP][PPTS]}[180]
+                \chemfig{*6([4]-=-=-*5(=N-N(-*6(-O-----))-=)-)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Deprotect with \ce{pTsOH} in \ce{MeOH}.
+        \end{itemize}
+        \item 3-halogenation.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-N=-)-)}
+                \arrow{->[NXS][\ce{Ph3P=S} (cat.)]}[,1.8]
+                \chemfig[fixed length=false]{*6([4]=-=-=*5(-\chembelow{N}{H}-N=(-X)-)-)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Feeds into cross-coupling.
+        \end{itemize}
+    \end{itemize}
+    \item Indazole synthesis.
+    \begin{itemize}
+        \item Route 1: (3)-substitution, and other on the benzene ring.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-=(-NH_2)-(--[2]R)=-=)}
+                \arrow{->[1. \ce{HONO}\hspace{3.1em}\ ][2. \ce{KOAc}, 18-C-6]}[,2]
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-N=(-R)-)-)}
+            \schemestop
+        \end{center}
+        \item Route 3: (3)-substitution, and other on the benzene ring.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-=(-F)-(-(=[:-30]O)-[2]OMe)=-=)}
+                \arrow{->[\ce{N2H4}][DME, $\Delta$]}[,1.3]
+                \chemfig{*6([4]=-=-=*5(-\chembelow{N}{H}-N=(-OH)-)-)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Can put nothing (aldehyde), amine (nitrile), or hydroxyl (ester) on the 3-position.
+        \end{itemize}
+    \end{itemize}
+    \item Thiophene reactivity.
+    \begin{itemize}
+        \item Perbromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-S-=-=)}
+                \arrow{->[\ce{Br2}]}
+                \chemfig[fixed length=false]{*5([:-18](-Br)-S-(-Br)=(-Br)-(-Br)=)}
+            \schemestop
+        \end{center}
+        \item 2-bromination/chlorination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-S-=-=)}
+                \arrow{->[NXS][\ce{H+}, hexanes, rt]}[,1.9]
+                \chemfig[fixed length=false]{*5([:-18]-S-(-X)=-=)}
+            \schemestop
+        \end{center}
+        \item 2-iodination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-S-=-=)}
+                \arrow{->[\ce{I2}][\ce{HNO3_{(aq)}}, $\Delta$]}[,1.6]
+                \chemfig[fixed length=false]{*5([:-18]-S-(-I)=-=)}
+            \schemestop
+        \end{center}
+        \item 2,3,5-tribromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-S-=-=)}
+                \arrow{->[3 eq. \ce{Br2}, 48\% \ce{HBr}, $\text{rt}\to\SI{75}{\celsius}$]}[,3.3]
+                \chemfig[fixed length=false]{*5([:-18](-Br)-S-(-Br)=(-Br)-=)}
+            \schemestop
+        \end{center}
+        \item 3-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-S-=-=)}
+                \arrow{->[1. 3 eq. \ce{Br2}, 48\% \ce{HBr}, $\text{rt}\to\SI{75}{\celsius}$][2. \ce{Zn, \ce{HOAc_{(aq)}}}\hspace{8.2em}\ ]}[,3.5]
+                \chemfig[fixed length=false]{*5([:-18]-S-=(-Br)-=)}
+            \schemestop
+        \end{center}
+        \item 2,3-dibromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-S-=-=)}
+                \arrow{->[1. 3 eq. \ce{Br2}, 48\% \ce{HBr}, $\text{rt}\to\SI{75}{\celsius}$][2. \ce{NaBH4}, \ce{Pd(PPh3)4}, ACN\hspace{2.6em}\ ]}[,3.5]
+                \chemfig[fixed length=false]{*5([:-18]-S-(-Br)=(-Br)-=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Thiophene synthesis.
+    \begin{itemize}
+        \item Industrial thiophene synthesis.
+        \begin{equation*}
+            \ce{BuH + S8 ->[{cat.}][\SI{600}{\celsius}] thiophene}
+        \end{equation*}
+        \item \textbf{Paal-Knorr} (thiophene synthesis): 25-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R-(=[:-60]O)-[:60]--[:-60](=[:-120]O)-R'}
+                \arrow{->[Lawesson]}[,1.3]
+                \chemfig{*5([:-18](-R)-S-(-R')=-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Fiesselmann} (thiophene synthesis): 2-ester-45-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[:30](-[:-30]Cl)=[2](-[:150]R^4)-[:30](=[:-30]O)-[2]H}
+                \arrow{0}[,0.1]\+
+                \chemfig{HS-[:30]-[:-30]CO_2R}
+                \arrow{->[base]}
+                \chemfig{*5([:-18](-R^5)-S-(-CO_2R)=-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Can also use esters or nitriles as in indazole route 1.
+            \item Can saponify ester to 2,3-substituted derivative.
+        \end{itemize}
+        \item \textbf{Hinsberg} (thiophene synthesis): 34-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^4-[:-60](=[:-120]O)-(=[:-60]O)-[:60]R^3}
+                \arrow{0}[,0.1]\+
+                \chemfig{RO_2C-[:30]-[:-30]S-[:30]-[:-30]CO_2R}
+                \arrow{->[1. \ce{NaOR}, \ce{ROH}\hspace{0.7em}\ ][2. \ce{NaOH}; \ce{H+}, $\Delta$]}[,2]
+                \chemfig{*5([:-18]-S-=(-R^3)-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Gewald} (thiophene synthesis): 2-amino-3-EWG-45-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[:30](-[:-30]Br)-[2](=[:30]O)-[:150]R^4}
+                \arrow{0}[,0.1]\+{,,1.8em}
+                \chemfig{CN-[2]-[:30]EWG}
+                \arrow{->[\ce{NaSH}][\ce{Et3N}]}
+                \chemfig{*5([:-18](-R^5)-S-(-NH_2)=(-EWG)-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Knoevenagel-type mechanism.
+            \item Remember that \ce{S1} is more active than \ce{S_n}.
+        \end{itemize}
+    \end{itemize}
+    \item Furan reactivity.
+    \begin{itemize}
+        \item 2-bromination.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-O-=-=)}
+                \arrow{->[\ce{Br2*dioxane}][$-\SI{50}{\celsius}$]}[,1.7]
+                \chemfig[fixed length=false]{*5([:-18]-O-(-Br)=-=)}
+            \schemestop
+        \end{center}
+        \item 2-addition.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-O-=-=)}
+                \arrow{->[1. \ce{{}^{\emph{n}}BuLi}, \ce{Et2O}, $\Delta$][2. \ce{E+}\hspace{5.8em}\ ]}[,2.2]
+                \chemfig[fixed length=false]{*5([:-18]-O-(-E)=-=)}
+            \schemestop
+        \end{center}
+        \item Diels-Alder with highly activated dienophiles.
+        \item Mannich reaction: 2-substitution.
+        \item 3-addition.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*5([:-18]-O-=-=)}
+                \arrow{->[1. \ce{{}^{\emph{n}}BuLi}, \ce{THF}, $-\SI{78}{\celsius}$][2. \ce{E+}\hspace{7.9em}\ ]}[,2.6]
+                \chemfig[fixed length=false]{*5([:-18]-O-=(-E)-=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Furan synthesis.
+    \begin{itemize}
+        \item \textbf{Paal-Knorr} (furan synthesis): 2(3)(4)5-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-(=[:-60]O)-[:60](-[:120]R^4)-(-[:60]R^3)-[:-60](=[:-120]O)-R^2}
+                \arrow{->[\ce{H2SO4}][[-\ce{H2O}]]}[,1.1]
+                \chemfig{*5([:-18]-O-=-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Feist-Benary} (furan synthesis - aldehydes): 23-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{Cl-[:30]-[2](=[:150]O)-[:30]H}
+                \+{,,2.4em}
+                \chemfig{R^2-[:150](=[:-150]O)-[2]-[:30]EWG}
+                \arrow{->[\ce{NaOH}][\ce{H2O}]}
+                \chemfig{*5([:-18]-O-(-R^2)=(-EWG)-=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Feist-Benary} (furan synthesis - ketones): 235-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[:30](=[:-30]O)-[2]-[:150]Cl}
+                \+{,,2.4em}
+                \chemfig{R^2-[:150](=[:-150]O)-[2]-[:30]EWG}
+                \arrow{->[\ce{NaOH}][\ce{H2O}]}
+                \chemfig{*5([:-18](-R^5)-O-(-R^2)=(-EWG)-=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+\end{itemize}
+
+
+
+
+\end{document}
