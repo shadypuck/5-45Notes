@@ -1,0 +1,334 @@
+\documentclass[../notes.tex]{subfiles}
+
+\pagestyle{main}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ (#1)}{}}
+\setcounter{chapter}{7}
+
+\begin{document}
+
+
+
+
+\chapter{Exam 2}
+\section{Exam 2 Review Sheet}
+\begin{itemize}
+    \item \marginnote{3/20:}Exam 1 content!
+    \item Cross-coupling, revisited.
+    \begin{itemize}
+        \item Heck reaction.
+        \begin{itemize}
+            \item Mechanism: Oxidative additoin, ligand exchange, migratory insertion, $\beta$-hydride elimination, ligand exchange, reductive elimination.
+            \item Regioselectivity: Balance of aryl to less-substituted \ce{C} (sterics), \ce{Pd} to $\delta^-$ \ce{C} (electronics).
+            \begin{itemize}
+                \item Triflates exaggerate $\delta^+$ on \ce{Pd}.
+            \end{itemize}
+        \end{itemize}
+        \item Buchwald-Hartwig amination.
+        \begin{itemize}
+            \item Palladium source: \ce{Pd(OAc)2}, \ce{Pd2(dba)3}, precatalyst (e.g., the following).
+            \begin{center}
+                \vspace{0.5em}
+                \footnotesize
+                \chemfig{*6(=-=*6(-Pd(-[:-10]L)(-[:-50]OMs)-NHMe-)-(-*6(=-=-=-))=-)}
+                \vspace{0.5em}
+            \end{center}
+            \begin{itemize}
+                \item $\ce{L}=\text{anything not super bulky, e.g., \ce{{}^{\emph{t}}BuBrettPhos}.}$
+            \end{itemize}
+            \item Ligand: BINAP, Xantphos, many others.
+            \item Base: Weak (\ce{Cs2CO3}) or strong (\ce{NaO{}^{\emph{t}}Bu}) can work.
+            \item Solvent: Ethereal or aromatic hydrocarbon can work.
+            \item Temperature: RT-\SI{140}{\celsius}.
+            \item Mechanism: Activation then oxidative addition, binding, deprotonation and loss of \ce{X-} to give \ce{base*HX} salt, reductive elimination.
+        \end{itemize}
+        \item Wacker oxidation.
+        \item Indole syntheses, promoted by Pd-catalyzed cross-coupling.
+        \begin{itemize}
+            \item New mechanisms, but do not create any new substitution schemes.
+        \end{itemize}
+        \item Ullmann/Goldberg couplings.
+        \begin{itemize}
+            \item Original method: Stoichiometric strong base, polar solvents, high temperatures.
+            \item Modern method: Ligands.
+            \begin{itemize}
+                \item Heterocycle-amide couplings (Goldberg-type): Proline.
+                \item Amine couplings (Ullmann-type): Oxalamides (even able heteroaryl chlorides!).
+            \end{itemize}
+            \item Mechanism: Nucleophile binding, oxidative addition, reductive elimination.
+            \begin{itemize}
+                \item May also be Pd-like in some cases (with oxidative addition first).
+            \end{itemize}
+            \item Use $sp^2$-bromides and iodides (\emph{not} $sp^2$-triflates).
+            \item Catalytic \ce{CuI} helpful.
+        \end{itemize}
+    \end{itemize}
+    \item New heterocycles and their key properties.
+    \begin{itemize}
+        \item 1,2,3-triazole.
+        \begin{itemize}
+            \item Stability: Up to \SI{500}{\celsius}.
+            \item Tautomerization: Rapid among all when unsubstituted.
+            \item Amphoteric, like imidazole.
+            \item Acidity: Protonated form ($\pKa=1.2$).
+            \item 1,2,3-triazole containing chemical: Benzotriazole (chemical photography).
+        \end{itemize}
+        \item 1,2,4-triazole.
+        \begin{itemize}
+            \item Tautomerization: Rapid among all when unsubstituted.
+            \item Acidity: Protonated form ($\pKa=2.2$).
+            \item 1,2,4-triazole containing drug: Epoxiconazole (fungicide).
+        \end{itemize}
+        \item Tetrazole.
+        \begin{itemize}
+            \item Tautomerization: Rapid.
+            \item Acidity: Comparable to a carboxylic acid.
+            \item Tetrazole-containing drug: Valsartan.
+        \end{itemize}
+        \item Oxazole.
+        \begin{itemize}
+            \item Basicity: Mildly basic nitrogen (not great because poor resonance).
+            \item Acidity: C2 can be deprotonated with LDA.
+            \item Aromaticity: Less aromatic than thiazole.
+            \item Oxazole-containing drug: Neopeltolide (oncology).
+        \end{itemize}
+        \item Isoxazole.
+        \begin{itemize}
+            \item Reactivity: Some EAS.
+            \item Isoxazole-containing drug: Valdecoxib (pain).
+        \end{itemize}
+        \item Thiazole.
+        \begin{itemize}
+            \item \emph{Reactivity, acidity, basicity, nucleophilicity, protonation, $\pi$-excessive/deficient, hydrogen bonding, tautomerization, etc.}
+            \item Basicity: More basic than oxazole (lower EN of \ce{S} vs. \ce{O}).
+            \item Aromaticity: Greater than oxazole.
+            \item Reactivity: EAS at enamine carbon (C5).
+            \item Thiazole-containing natural product: Thiamine aka vitamin B1.
+        \end{itemize}
+        \item 1,2,4-oxadiazole.
+        \begin{itemize}
+            \item Reactivity: Explosophore.
+        \end{itemize}
+        \item 1,3,4-oxadiazole.
+        \begin{itemize}
+            \item 1,3,4-oxadiazole-containing drug: Raltegravir (HIV).
+        \end{itemize}
+    \end{itemize}
+    \item 1,2,3-triazole synthesis.
+    \begin{itemize}
+        \item $[3+2]$ dipolar azide-alkyne cycloadditions.
+        \begin{figure}[h!]
+            \centering
+            \footnotesize
+            \begin{subfigure}[b]{0.45\linewidth}
+                \centering
+                \schemestart
+                    \chemfig{[2]~[2]-R'}
+                    \arrow{0}[,0.1]\+{,,2.7em}
+                    \chemfig[fixed length=false]{R-[:150]\charge{180=$\ominus$}{N}-[2]\charge{180=$\oplus$}{N}~[2]N-[4,0.5,,,opacity=0]}
+                    \arrow{->[\ce{Cu}]}
+                    \chemfig[fixed length=false]{*5(-N(-R)-N=N-(-R')=)}
+                \schemestop
+                \caption{CuAAC (1,4-substitution).}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.45\linewidth}
+                \centering
+                \schemestart
+                    \chemfig{R'-[2]~[2]}
+                    \arrow{0}[,0.1]\+{,,2.7em}
+                    \chemfig[fixed length=false]{R-[:150]\charge{180=$\ominus$}{N}-[2]\charge{180=$\oplus$}{N}~[2]N-[4,0.5,,,opacity=0]}
+                    \arrow{->[\ce{Cp^*RuCl}]}[,1.4]
+                    \chemfig[fixed length=false]{*5((-R')-N(-R)-N=N-=)}
+                \schemestop
+                \caption{RuAAC (1,5-substitution).}
+            \end{subfigure}
+        \end{figure}
+        \begin{itemize}
+            \item Making aliphatic azides: Use S\textsubscript{N}2.
+            \item Making aryl azides: Use 1. HONO, 2. \ce{NaN3}.
+            \item Possible mechanism: Sonogashira-type copper acetylide formation, azide coordination, electrocyclization, ring contraction, elimination.
+        \end{itemize}
+    \end{itemize}
+    \item 1,2,4-triazole synthesis.
+    \begin{itemize}
+        \item \textbf{Paal-Knorr-type} (1,2,4-triazole synthesis): (3)(4)5-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-(=[:-60]O)-[:60,,,2]HN-NH-[:-60,,1](=[:-120]O)-R^3}
+                \+
+                \chemfig{R^4-NH_2}
+                \arrow{->[\ce{P4O10}][$\Delta$]}[,1.1]
+                \chemfig[fixed length=false]{*5([:-18](-R^5)-N(-R^4)-(-R^3)=N-N=)}
+            \schemestop
+        \end{center}
+        \item \emph{sym}-Triazine-type (1,2,4-triazole synthesis): 1-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{*6(-N=-N=-N=)}
+                \arrow{0}[,0.1]\+{,,-1.5em}
+                \chemfig{R^1-[:-60]\chembelow{N}{H}(-[6,0.4,,,opacity=0])-NH_2}
+                \arrow{->[$\Delta$][\ce{EtOH}]}
+                \chemfig[fixed length=false]{*5([:-18]-N-=N-N(-R^1)=)}
+            \schemestop
+        \end{center}
+        \item Acyl hydrazides and chloroimidates: Enables formation of same derivatives.
+        \item \textbf{Pinner-type} (1,2,4-triazole synthesis): 13-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^3-~N}
+                \arrow{->[\tikz{\node[align=left]{1. \ce{MeOH}, \ce{HCl}\\2. \ce{R^1{}-NHNH2}\\3. \ce{HC(OEt)3}}}]}[,1.8]
+                \chemfig[fixed length=false]{*5([:-18](-R^3)-\chembelow{N}{H}-=N(-R^1)-N=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Tetrazole synthesis.
+    \begin{itemize}
+        \item \textbf{Vilsmeier-Haack-type} (tetrazole synthesis): 15-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[:30](=[2]O)-[:-30]\chembelow{N}{H}-[:30]R^1}
+                \arrow{->[\ce{NaN3}, \ce{Tf2O}][DCM, rt]}[,1.6]
+                \chemfig[fixed length=false]{*5([:-18](-R^5)-N(-R^1)-N=N-N=)}
+            \schemestop
+        \end{center}
+        \item Tin azide-type (tetrazole synthesis): 5-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-~N}
+                \+
+                \chemfig{N_3-{}^{\emph{n}}Bu_3Sn}
+                \arrow{->[\ce{HCl}]}
+                \chemfig{*5([:-18](-R^5)-\chembelow{N}{H}(-[6,0.4,,,opacity=0])-N=N-N=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Passerini} (tetrazole synthesis): Enables formation of same derivatives.
+    \end{itemize}
+    \item Oxazole reactivity.
+    \begin{itemize}
+        \item S\textsubscript{N}Ar at C2 with good LG (e.g., chloride).
+        \item C2-lithiation and electrophilic functionalization (via ring-opened isocyanide).
+        \item 5-addition (2-lithiation, TIPS protection, 5-lithiation, functionalization, PG removal).
+        \item Lateral deprotonation.
+        \item \textbf{Cornforth rearrangement}.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{R^2-*5(-O-(-R^5)=(-(=[::60]O)-[::-60]R^4)-N=)}
+                \arrow{->[$\Delta$]}
+                \chemfig[fixed length=false]{R^2-*5(-O-(-{\color{rex}R^4})=(-(=[::60]O)-[::-60]{\color{rex}R^5})-N=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item Oxazole synthesis.
+    \begin{itemize}
+        \item \textbf{Robinson-Gabriel} (oxazole synthesis): 2(4)5-substitution.
+        \begin{center}
+            \vspace{0.5em}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[:30](=[:-30]O)-[2](-[:150]R^4)-[:30]\chemabove{N}{H}-[:-30](=[6]O)-[:30]R^2}
+                \arrow{->[\ce{P2O5}][$\Delta$]}
+                \chemfig[fixed length=false]{*5((-R^5)-O-(-R^2)=N-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Bl\"{u}mlein-Lewy} (oxazole synthesis): 24-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^4-[:-30](=[:30]O)-[6]-[:-150]Br}
+                \arrow{0}[,0.1]\+
+                \chemfig{R^2-[4](=[:-120]O)-[:120]H_2N}
+                \arrow{->[$\Delta$]}
+                \chemfig[fixed length=false]{*5(-O-(-R^2)=N-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \item \textbf{Fischer} (oxazole synthesis): Enables formation of same derivatives.
+    \end{itemize}
+    \item Isoxazole synthesis.
+    \begin{itemize}
+        \item Dipolar cycloaddition: 5-ester-34-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[2]~[2]-[2,,,3]MeO_2C}
+                \arrow{0}[,0.1]\+{,,2.7em}
+                \chemfig{HO-[:30]N=[2](-[:150]Cl)-[:30]R^3}
+                \arrow
+                \chemfig[fixed length=false]{*5((-R^5)-O-N=(-R^3)-(-MeO_2C)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Nitrile oxides formed from 1,3-elimination of oximes.
+            \item Esters can be saponified.
+            \item \ce{R^5} can be bromine, and then hydrogenated.
+        \end{itemize}
+    \end{itemize}
+    \item Thiazole synthesis.
+    \begin{itemize}
+        \item \textbf{Hantzsch} (thiazole synthesis): 24(5)-substitution.
+        \begin{center}
+            \footnotesize
+            \schemestart
+                \chemfig{R^4-[:-30](=[:30]O)-[6](-[:-30]Br)-[:-150]R^5}
+                \arrow{0}[,0.1]\+
+                \chemfig{R^2-[4](=[:-120]S)-[:120]H_2N}
+                \arrow
+                \chemfig[fixed length=false]{*5((-R^5)-S-(-R^2)=N-(-R^4)=)}
+            \schemestop
+        \end{center}
+        \begin{itemize}
+            \item Other halides and pseudo-halides can be used in place of a bromide.
+        \end{itemize}
+        \item \textbf{Van Leusen} (thiazole synthesis): Enables formation of 4-tosyl-5-thioesterthiazoles.
+        \item \textbf{Cook-Heilbron} (thiazole synthesis): Enables formation of 2-thio-5-amino-4-substituted thiazoles.
+        \item \textbf{Robinson-Gabriel} (thiazole synthesis): 2(4)5-substitution.
+        \begin{center}
+            \vspace{0.5em}
+            \footnotesize
+            \schemestart
+                \chemfig{R^5-[:30](=[:-30]O)-[2](-[:150]R^4)-[:30]\chemabove{N}{H}-[:-30](=[6]O)-[:30]R^2}
+                \arrow{->[\ce{P4S10}][$\Delta$]}[,1.1]
+                \chemfig[fixed length=false]{*5((-R^5)-S-(-R^2)=N-(-R^4)=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item 1,2,4-oxadiazole synthesis.
+    \begin{itemize}
+        \item \textbf{Pinner-type} (1,2,4-oxadiazole synthesis): 35-substitution.
+        \begin{center}
+            \vspace{0.5em}
+            \footnotesize
+            \schemestart
+                \chemfig{N~-R^3}
+                \arrow{->[1. \ce{NH2OH*HCl}][2. \scriptsize\chemfig[atom sep=1.4em]{R^5-(=[:60]O)-[:-60]Cl}\hspace{2.3em}\ ]}[,2]
+                \chemfig[fixed length=false]{*5([:-18](-R^5)-O-N=(-R^3)-N=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+    \item 1,3,4-oxadiazole sythesis.
+    \begin{itemize}
+        \item \textbf{Robinson-Gabriel-type} (1,3,4-oxadiazole syntheiss): 25-substitution.
+        \begin{center}
+            \vspace{0.5em}
+            \footnotesize
+            \schemestart
+                \chemfig[fixed length=false]{R^5-(=[:-60]O)-[:60]OMe}
+                \arrow{->[\ce{N2H4*$x$H2O}]}[,1.7]
+                \chemfig[fixed length=false]{R^5-(=[:-60]O)-[:60]\chemabove{N}{H}-NH_2}
+                \arrow{->[\scriptsize\chemfig[atom sep=1.4em]{X-[:-60](=[:-120]O)-R^2}]}[,1.2]
+                \chemfig[fixed length=false]{R^5-(=[:-60]O)-[:60]\chemabove{N}{H}-\chemabove{N}{H}-[:-60](=[:-120]O)-R^2}
+                \arrow{->[\ce{POCl3}]}
+                \chemfig[fixed length=false]{*5([:-18](-R^5)-O-(-R^2)=N-N=)}
+            \schemestop
+        \end{center}
+    \end{itemize}
+\end{itemize}
+
+
+
+
+\end{document}
